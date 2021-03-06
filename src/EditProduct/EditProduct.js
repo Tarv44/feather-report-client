@@ -44,6 +44,20 @@ export default class EditProduct extends Component {
     updateCategory(category) {
         this.setState({ category })
     }
+    
+    removeFeature = (e, i) => {
+        e.preventDefault()
+        const features = this.state.features
+        features.splice(i, 1)
+        this.setState({ features })
+    }
+
+    addFeature = (e) => {
+        e.preventDefault()
+        const features = this.state.features
+        features.push({message: '', id: ''})
+        this.setState({ features })
+    }
 
     render() {
         const id = this.state.id
@@ -90,6 +104,8 @@ export default class EditProduct extends Component {
                     features={this.state.features}
                     id={id}
                     handleCategory={this.updateCategory}
+                    removeFeature={this.removeFeature}
+                    addFeature={this.addFeature}
                 />
             </form>
         )

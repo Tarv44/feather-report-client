@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProductContext from '../productContext';
+import styles from './EditFeatures.module.css'
 
 export default class EditFeatures extends Component {
     static contextType = ProductContext;
@@ -71,11 +72,22 @@ export default class EditFeatures extends Component {
                         return <option key={c}>{feat.message}</option>
                     }
                 })
-                return (
-                    <select key={i}>
-                        {featureOptions}
-                    </select>
-                )
+                if (i === 0) {
+                    return (
+                        <select id={i} key={i}>
+                            {featureOptions}
+                        </select>
+                    )
+                } else {
+                    return (
+                        <>
+                            <select key={i}>
+                                {featureOptions}
+                            </select>
+                            <button className={styles.remove} onClick={e => this.props.removeFeature(e, i)}>Remove Feature</button>
+                        </>
+                    )
+                }
             })
         }
     }
@@ -107,8 +119,9 @@ export default class EditFeatures extends Component {
                     <option>Select Category</option>
                     {categories}
                 </select>
+                <p>Features</p>
                 {features}
-                <button>Add Another Feature</button>
+                <button className={styles.addFeat} onClick={e => this.props.addFeature(e)}>Add Another Feature</button>
             </fieldset>
         )
     }
