@@ -1,0 +1,9 @@
+.product {
+    border: solid black 3px;
+    max-width: 50%;
+}
+
+.notFeatured {
+    text-decoration: line-through;
+    opacity: .3;
+}
