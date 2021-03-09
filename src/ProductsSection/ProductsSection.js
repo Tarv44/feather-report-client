@@ -7,10 +7,20 @@ export default class ProductsSection extends Component {
         const productDivs = this.props.catFilter 
             ? this.props.products.filter(p => p.category === this.props.catFilter)
                 .map((p, i) => {
-                    return <Product productData={p} key={i} type={this.props.type} />
+                    return <Product 
+                        productData={p} 
+                        key={i} 
+                        type={this.props.type}
+                        handleSelected={this.props.handleSelected} 
+                    />
                 })
             : this.props.products.map((p, i) => {
-                return <Product productData={p} key={i} type={this.props.type} />
+                return <Product 
+                    productData={p} 
+                    key={i} 
+                    type={this.props.type}
+                    handleSelected={this.props.handleSelected} 
+                />
             })
 
         return (

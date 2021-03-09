@@ -6,12 +6,17 @@ import EditProduct from '../EditProduct/EditProduct';
 export default class Product extends Component {
     state = {
         type: this.props.type,
-        editing: false
+        editing: false,
+        selected: false
     }
 
     displayEdit = (e) => {
         e.preventDefault()
         this.setState({ editing: true })
+    }
+
+    toggleSelected = () => {
+        this.setState({ selected: !this.state.selected })
     }
 
     render() {
@@ -35,10 +40,20 @@ export default class Product extends Component {
 
         
         const action = this.state.type === 'edit'
-            ? <ProductAction handleForm={this.displayEdit} type={this.state.type} />
+            ? <ProductAction 
+                handleForm={this.displayEdit} 
+                type={this.state.type} 
+            />
             : this.state.type === 'select'
-            ? <ProductAction product={product} type={this.state.type} />
-            : <ProductAction type={this.state.type} />
+            ? <ProductAction 
+                handleSelected={this.props.handleSelected}
+                product={product}
+                selected={this.state.selected} 
+                type={this.state.type} 
+            />
+            : <ProductAction 
+                type={this.state.type} 
+            />
 
         return this.state.editing 
             ? <EditProduct product={product}/>

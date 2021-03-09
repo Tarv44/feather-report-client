@@ -12,7 +12,7 @@ export default class CatSelector extends Component {
                 <h2>Categories</h2>
                 <div className={styles.buttons}>
                     {catButtons}
-                    <button onClick={e => this.props.handleFilter('')}>Clear Filter</button>
+                    <button onClick={e => this.props.handleFilter('')}>All Categories</button>
                 </div>
             </section>
         )

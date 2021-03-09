@@ -16,7 +16,10 @@ class App extends Component {
 
   updateSelected = (action, product) => {
     if (action === 'add') {
-      this.setState({ selected: [...this.state.selected, product] })
+      const selected = this.state.selected
+      selected.push(product)
+      console.log(selected)
+      this.setState({ selected })
     }
     if (action === 'remove') {
       const selected = this.state.selected.filter(p => p.id !== product.id)
@@ -35,6 +38,7 @@ class App extends Component {
       <ProductContext.Provider value={contextValue}>
         <div className="App">
           <Route exact path={'/co/:co_name/products'} component={ProductsBrowser} />
+          <Route exact path={'/compare'} component={Compare} />
         </div>
       </ProductContext.Provider>
       

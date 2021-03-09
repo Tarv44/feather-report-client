@@ -10,27 +10,34 @@ export default class ProductAction extends Component {
     static contextType = ProductContext
 
     state = {
-        selected: false
+        maxReached: false
     }
 
     onSelect = () => {
-        if (this.state.selected) {
-            this.setState({ selected: false })
+        const isSelected = this.props.product.selected
+        if (isSelected) {
+            this.props.handleSelected(this.props.product.id)
             this.context.handleSelected('remove', this.props.product)
         } else {
             if (this.context.selected.length < 4) {
-                this.setState({ selected: true })
+                this.props.handleSelected(this.props.product.id)
                 this.context.handleSelected('add', this.props.product)
+            } else {
+                this.setState({ maxReached: true })
+                setTimeout(() => {
+                    this.setState({maxReached: false})
+                }, 1000)
             }
         }
     }
 
     setDisplay() {
         const type = this.props.type
+        
         if (type === 'edit') {
             return (
                 <button
-                    className={`${styles.button } ${styles.edit}`}
+                    className={`${styles.button }`}
                     onClick={e => this.props.handleForm(e)}
                 >
                     Edit Product
@@ -39,7 +46,7 @@ export default class ProductAction extends Component {
         }
 
         if (type === 'select') {
-            if (this.state.selected) {
+            if (this.props.product.selected) {
                 return <button 
                     onClick={e => this.onSelect()}
                     className={`${styles.button } ${styles.selected}`}
@@ -47,20 +54,29 @@ export default class ProductAction extends Component {
                     Selected
                 </button>
             }
-            return (
-                <button
-                    className={`${styles.button } ${styles.select}`}
-                    onClick={e => this.onSelect()}
-                >
-                    Select Product
-                </button>
-            )
+            return this.state.maxReached 
+                ? (
+                    <button 
+                        className={`${styles.button } ${styles.maxed}`} 
+                        disabled={true}
+                    >
+                            Max Reached
+                    </button>
+                )
+                : (
+                    <button
+                        className={`${styles.button }`}
+                        onClick={e => this.onSelect()}
+                    >
+                        Select Product
+                    </button>
+                )
         }
 
         if (type === 'compare') {
             return (
                 <button
-                    className={`${styles.button } ${styles.compare}`}
+                    className={`${styles.button }`}
                 >
                     Buy Online
                 </button>
