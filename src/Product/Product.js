@@ -27,24 +27,31 @@ export default class Product extends Component {
                 return <li key={i} id={f.id} className={styles.notFeatured}>{f.message}</li>
             })
             : product.features.map((f, i) => {
-            return <li key={i} id={f.id}>{f.message}</li>
-        })
+                if (f === undefined) {
+                    return <li key={i}>Loading...</li>
+                }
+                return <li key={i}>{f.message}</li>
+            })
 
         
         const action = this.state.type === 'edit'
             ? <ProductAction handleForm={this.displayEdit} type={this.state.type} />
+            : this.state.type === 'select'
+            ? <ProductAction product={product} type={this.state.type} />
             : <ProductAction type={this.state.type} />
 
         return this.state.editing 
             ? <EditProduct product={product}/>
             : (
                 <div className={styles.product}>
-                    <h2>{product.title}</h2>
-                    <p>${product.price}</p>
-                    <p>{product.description}</p>
-                    <ul>
-                        {features}
-                    </ul>
+                    <div className={styles.product_content}>
+                        <h2>{product.title}</h2>
+                        <p>${product.price}</p>
+                        <p>{product.description}</p>
+                        <ul>
+                            {features}
+                        </ul>
+                    </div>
                     {action}
                 </div>
             )

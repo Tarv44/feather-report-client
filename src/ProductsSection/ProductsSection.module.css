@@ -1,0 +1,8 @@
+.section {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.section div {
+    max-width: 25%;
+}

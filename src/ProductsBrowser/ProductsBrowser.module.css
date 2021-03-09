@@ -1,0 +1,4 @@
+.browser_main {
+    display: flex;
+    flex-direction: row;
+}

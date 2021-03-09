@@ -1,7 +1,7 @@
 import {createContext} from 'react';
 
 const productContext = createContext({
-    categories: []
+    company: {}
 })
 
 export default productContext;

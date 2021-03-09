@@ -1,0 +1,14 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons button {
+    margin-bottom: 20px;
+}
+
+.section {
+    min-width: 15%;
+    padding: 0 10px;
+}

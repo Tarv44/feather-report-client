@@ -5,3 +5,8 @@
     /* box-shadow: 3px 3px 1px #ccc; */
     margin-bottom: 20px;
 }
+
+.selected {
+    background-color: black;
+    color: white;
+}
