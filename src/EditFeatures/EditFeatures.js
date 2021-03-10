@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ProductContext from '../productContext';
-import styles from './EditFeatures.module.css'
+import styles from './EditFeatures.module.css';
+import { features, categories } from '../dummy-store';
 
 export default class EditFeatures extends Component {
     static contextType = ProductContext;
@@ -10,58 +11,25 @@ export default class EditFeatures extends Component {
     }
 
     componentDidMount() {
-        const allFeatures = [
-            {
-              message: `Full lifetime warranty.`,
-              id: 'feat1'
-            },
-            {
-              message: `White Pearl`,
-              id: 'feat10'
-            },
-            {
-              message: `Onyx Black`,
-              id: 'feat2'
-            },
-            {
-              message: `Stainless Steel`,
-              id: 'feat3'
-            },
-            {
-              message: `Sharpening Sheath`,
-              id: 'feat11'
-            },
-            {
-              message: `Carbon`,
-              id: 'feat4'
-            },
-            {
-              message: `Nonstick`,
-              id: 'feat12'
-            },
-            {
-              message: `Titanium`,
-              id: 'feat13'
-            },
-            {
-              message: `Triple Rivet`,
-              id: 'feat5'
-            },
-        ]
-
-        this.setState({ catFeatures: allFeatures})
+        const category = this.props.category
+        const catFeatures = category !== 'Select Category' 
+            ? features[this.props.category]
+            : []
+        this.setState({ catFeatures})
     }
 
     setFeatures() {
         if (this.props.features.length === 0) {
             const featureOptions = this.state.catFeatures.map((f, i) => {
-                return <option key={i}>{f}</option>
+                return <option key={i}>{f.message}</option>
             })
             return (
-                <select>
-                    <option>Select Feature</option>
-                    {featureOptions}
-                </select>
+                <div>
+                    <select>
+                        <option>Select Feature</option>
+                        {featureOptions}
+                    </select>
+                </div>
             )
         } else {
             return this.props.features.map((f, i) => {
@@ -74,18 +42,22 @@ export default class EditFeatures extends Component {
                 })
                 if (i === 0) {
                     return (
-                        <select id={i} key={i}>
-                            {featureOptions}
-                        </select>
+                        <div key={i}>
+                            <select>
+                                <option>Select Feature</option>
+                                {featureOptions}
+                            </select>
+                        </div>
                     )
                 } else {
                     return (
-                        <>
-                            <select key={i}>
+                        <div key={i}>
+                            <select >
+                                <option>Select Feature</option>
                                 {featureOptions}
                             </select>
                             <button className={styles.remove} onClick={e => this.props.removeFeature(e, i)}>Remove Feature</button>
-                        </>
+                        </div>
                     )
                 }
             })
@@ -93,17 +65,19 @@ export default class EditFeatures extends Component {
     }
 
     updateCatFeatures(category) {
+        const catFeatures = features[category]
+        this.setState({ catFeatures})
         this.props.handleCategory(category)
     }
 
     render() {
         const id = this.props.id
 
-        const categories = this.context.categories.map(c => {
+        const catOptions = categories.map((c, i) => {
             if (c === this.props.category) {
-                return <option selected={true}>{c}</option>
+                return <option key={i} selected={true}>{c}</option>
             }
-            return <option>{c}</option>
+            return <option key={i} >{c}</option>
         })
 
         const features = this.setFeatures()
@@ -117,7 +91,7 @@ export default class EditFeatures extends Component {
                     onChange={e => this.updateCatFeatures(e.target.value)}
                 >
                     <option>Select Category</option>
-                    {categories}
+                    {catOptions}
                 </select>
                 <p>Features</p>
                 {features}

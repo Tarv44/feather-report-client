@@ -41,8 +41,11 @@ export default class EditProduct extends Component {
         this.setState({ link })
     }
 
-    updateCategory(category) {
-        this.setState({ category })
+    updateCategory = (category) => {
+        this.setState({ 
+            category,
+            features: [{message: 'Select Feature'}]  
+        })
     }
     
     removeFeature = (e, i) => {
@@ -55,7 +58,7 @@ export default class EditProduct extends Component {
     addFeature = (e) => {
         e.preventDefault()
         const features = this.state.features
-        features.push({message: '', id: ''})
+        features.push({message: 'Select Feature'})
         this.setState({ features })
     }
 

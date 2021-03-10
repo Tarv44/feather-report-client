@@ -17,7 +17,7 @@ export default class ProductsBrowser extends Component {
     static contextType = ProductContext
 
     componentDidMount() {
-        const companyNameId = this.props.match.params.co_name
+        const companyNameId = this.props.match.params.co_path
 
         const products = prodWithFeat.map(p => {
             p.selected = false

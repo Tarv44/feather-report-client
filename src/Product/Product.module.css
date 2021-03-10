@@ -5,10 +5,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 
-.product_content {
+.content {
     max-width: 100% !important;
+}
+
+.content h2 {
+    min-height: 120px;
 }
 
 .notFeatured {

@@ -59,15 +59,18 @@ export default class Product extends Component {
             ? <EditProduct product={product}/>
             : (
                 <div className={styles.product}>
-                    <div className={styles.product_content}>
+                    <div className={styles.content}>
                         <h2>{product.title}</h2>
                         <p>${product.price}</p>
-                        <p>{product.description}</p>
+                    </div>
+                    
+                    <p>{product.description}</p>
+                    <div className={styles.content}>
                         <ul>
                             {features}
                         </ul>
+                        {action}
                     </div>
-                    {action}
                 </div>
             )
     }

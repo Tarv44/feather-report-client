@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import ProductContext from './productContext';
 import ProductsBrowser from './ProductsBrowser/ProductsBrowser';
-import {Route} from 'react-router-dom'
+import Compare from './Compare/Compare';
+import Admin from './Admin/Admin';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -37,7 +39,8 @@ class App extends Component {
     return (
       <ProductContext.Provider value={contextValue}>
         <div className="App">
-          <Route exact path={'/co/:co_name/products'} component={ProductsBrowser} />
+          <Route exact path={'/co/:co_path/products'} component={ProductsBrowser} />
+          <Route exact path={'/co/:co_path/admin'} component={Admin}/>
           <Route exact path={'/compare'} component={Compare} />
         </div>
       </ProductContext.Provider>
