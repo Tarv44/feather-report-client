@@ -11,7 +11,7 @@ export default class EditProduct extends Component {
             category: 'Select Category',
             features: [],
             link: '',
-            id:''
+            id: null
         }
     }
 
@@ -70,6 +70,9 @@ export default class EditProduct extends Component {
 
     render() {
         const id = this.state.id
+        const Submit = this.state.id === null
+            ? <button onClick={e => this.props.addProduct(e, this.state)}>Add Product</button>
+            : <button onClick={e => this.props.updateProduct(e, this.state)}>Update Product</button>
 
         return (
             <form className={styles.productForm}>
@@ -117,6 +120,7 @@ export default class EditProduct extends Component {
                     addFeature={this.addFeature}
                     updateFeature={this.updateFeature}
                 />
+                {Submit}
             </form>
         )
     }

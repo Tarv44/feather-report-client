@@ -19,6 +19,12 @@ export default class Product extends Component {
         this.setState({ selected: !this.state.selected })
     }
 
+    updateProduct = (e, product) => {
+        e.preventDefault()
+        this.props.updateProduct(product)
+        this.setState({ editing: false })
+    }
+
     render() {
         const product = this.props.productData
 
@@ -56,7 +62,7 @@ export default class Product extends Component {
             />
 
         return this.state.editing 
-            ? <EditProduct product={product}/>
+            ? <EditProduct updateProduct={this.updateProduct} product={product}/>
             : (
                 <div className={styles.product}>
                     <div className={styles.content}>

@@ -9,9 +9,10 @@ export default class ProductsSection extends Component {
                 .map((p, i) => {
                     return <Product 
                         productData={p} 
-                        key={i} 
+                        key={i}
                         type={this.props.type}
-                        handleSelected={this.props.handleSelected} 
+                        handleSelected={this.props.handleSelected}
+                        updateProduct={this.props.updateProduct} 
                     />
                 })
             : this.props.products.map((p, i) => {
@@ -19,7 +20,8 @@ export default class ProductsSection extends Component {
                     productData={p} 
                     key={i} 
                     type={this.props.type}
-                    handleSelected={this.props.handleSelected} 
+                    handleSelected={this.props.handleSelected}
+                    updateProduct={this.props.updateProduct} 
                 />
             })
 
