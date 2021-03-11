@@ -5,14 +5,15 @@ import Compare from './Compare/Compare';
 import Admin from './Admin/Admin';
 import { Route } from 'react-router-dom';
 import Landing from './Landing/Landing';
+import Login from './Login/Login';
 import './App.css';
 
 class App extends Component {
 
   state = {
     company: {
-      name: `Sid's Kitchen Stuff`,
-      path: `SidsKitchenStuff`
+      name: '',
+      path: ''
     },
     selected: []
   }
@@ -30,11 +31,18 @@ class App extends Component {
     }
   }
 
+  updateCompany = (company) => {
+    this.setState({
+      company
+    })
+  }
+
   render() {
     const contextValue = {
       company: this.state.company,
       selected: this.state.selected,
       handleSelected: this.updateSelected,
+      handleCompany: this.updateCompany
     }
 
     return (
@@ -43,6 +51,7 @@ class App extends Component {
           <Route exact path={'/co/:co_path/products'} component={ProductsBrowser} />
           <Route exact path={'/co/:co_path/admin'} component={Admin}/>
           <Route exact path={'/compare'} component={Compare} />
+          <Route exact path={'/login'} component={Login} />
           <Route exact path={'/'} component={Landing} />
         </div>
       </ProductContext.Provider>

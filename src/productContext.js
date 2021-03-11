@@ -1,7 +1,8 @@
 import {createContext} from 'react';
 
 const productContext = createContext({
-    company: {}
+    company: {},
+    handleCompany: () => {}
 })
 
 export default productContext;

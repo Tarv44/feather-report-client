@@ -1,17 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 fieldset {
   display: flex;
   flex-direction: column;
@@ -21,4 +7,15 @@ fieldset {
 select {
   margin: 5px 0;
   width: 100%;
+}
+
+input[type='text'],
+input[type='password'] {
+  border: none;
+  background-color: #acacac;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  padding: .3em;
 }
