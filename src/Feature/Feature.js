@@ -45,12 +45,12 @@ export default class Feature extends Component {
                     >
                         Submit Feature
                     </button>
-                    {this.props.index > 0 && <button 
+                    <button 
                         className={styles.remove} 
                         onClick={e => this.props.removeFeature(e, this.props.index)}
                     >
                         Remove Feature
-                    </button>}
+                    </button>
                 </div>
             )
             : (
@@ -68,12 +68,12 @@ export default class Feature extends Component {
                     >
                         Create New Feature
                     </button>
-                    {this.props.index > 0 && <button 
+                    <button 
                         className={styles.remove} 
                         onClick={e => this.props.removeFeature(e, this.props.index)}
                     >
                         Remove Feature
-                    </button>}
+                    </button>
                 </div>
             )
 

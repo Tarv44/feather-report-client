@@ -20,9 +20,16 @@ export default class ProductsBrowser extends Component {
         const companyNameId = this.props.match.params.co_path
 
         const products = prodWithFeat.map(p => {
-            p.selected = false
+            const isSelected = this.context.selected.findIndex(s => s.id === p.id) >= 0
+            if (isSelected) {
+                p.selected = true
+            } else {
+                p.selected = false
+            }
             return p
         })
+
+
 
         this.setState({ 
             company: companies[companyNameId],
