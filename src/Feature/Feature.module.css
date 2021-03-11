@@ -1,15 +1,6 @@
-.addFeat {
-    margin-top: 15px;
-}
-
 .select {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
 }

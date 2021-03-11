@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ProductContext from '../productContext';
 import styles from './EditFeatures.module.css';
 import { features, categories } from '../dummy-store';
+import Feature from '../Feature/Feature';
 
 export default class EditFeatures extends Component {
     static contextType = ProductContext;
@@ -17,52 +18,7 @@ export default class EditFeatures extends Component {
             : []
         this.setState({ catFeatures})
     }
-
-    setFeatures() {
-        if (this.props.features.length === 0) {
-            const featureOptions = this.state.catFeatures.map((f, i) => {
-                return <option key={i}>{f.message}</option>
-            })
-            return (
-                <div>
-                    <select>
-                        <option>Select Feature</option>
-                        {featureOptions}
-                    </select>
-                </div>
-            )
-        } else {
-            return this.props.features.map((f, i) => {
-                const featureOptions = this.state.catFeatures.map((feat, c) => {
-                    if (feat.id === f.id) {
-                        return <option key={c} selected={true}>{feat.message}</option>
-                    } else {
-                        return <option key={c}>{feat.message}</option>
-                    }
-                })
-                if (i === 0) {
-                    return (
-                        <div key={i}>
-                            <select>
-                                <option>Select Feature</option>
-                                {featureOptions}
-                            </select>
-                        </div>
-                    )
-                } else {
-                    return (
-                        <div key={i}>
-                            <select >
-                                <option>Select Feature</option>
-                                {featureOptions}
-                            </select>
-                            <button className={styles.remove} onClick={e => this.props.removeFeature(e, i)}>Remove Feature</button>
-                        </div>
-                    )
-                }
-            })
-        }
-    }
+    
 
     updateCatFeatures(category) {
         const catFeatures = features[category]
@@ -70,32 +26,53 @@ export default class EditFeatures extends Component {
         this.props.handleCategory(category)
     }
 
+    submitFeature = (feature) => {
+        const catFeatures = this.state.catFeatures
+        catFeatures.push({message: feature})
+        this.setState({ catFeatures })
+    }
+
     render() {
         const id = this.props.id
 
         const catOptions = categories.map((c, i) => {
-            if (c === this.props.category) {
-                return <option key={i} selected={true}>{c}</option>
-            }
             return <option key={i} >{c}</option>
         })
 
-        const features = this.setFeatures()
+        const FeatureComponents = this.props.features.map((f, i) => {
+            return (
+                <Feature
+                    features={this.state.catFeatures} 
+                    index={i}
+                    key={i}
+                    selected={f.message}
+                    updateFeature={this.props.updateFeature}
+                    submitFeature={this.submitFeature}
+                    removeFeature={this.props.removeFeature}
+                />
+            )
+        })
 
         return (
             <fieldset>
-                <legend>Features</legend>
+                <legend>Category and Features</legend>
                 <label htmlFor={`productCats-${id}`}>Category</label>
                 <select 
                     id={`productCats-${id}`} 
                     onChange={e => this.updateCatFeatures(e.target.value)}
+                    value={this.props.category}
                 >
                     <option>Select Category</option>
                     {catOptions}
                 </select>
                 <p>Features</p>
-                {features}
-                <button className={styles.addFeat} onClick={e => this.props.addFeature(e)}>Add Another Feature</button>
+                {FeatureComponents}
+                <button 
+                    className={styles.addFeat} 
+                    onClick={e => this.props.addFeature(e)}
+                >
+                    Add Another Feature
+                </button>
             </fieldset>
         )
     }

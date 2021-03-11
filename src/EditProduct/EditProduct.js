@@ -47,6 +47,12 @@ export default class EditProduct extends Component {
             features: [{message: 'Select Feature'}]  
         })
     }
+
+    updateFeature = (f, i) => {
+        const features = this.state.features
+        features[i].message = f
+        this.setState({ features })
+    }
     
     removeFeature = (e, i) => {
         e.preventDefault()
@@ -109,6 +115,7 @@ export default class EditProduct extends Component {
                     handleCategory={this.updateCategory}
                     removeFeature={this.removeFeature}
                     addFeature={this.addFeature}
+                    updateFeature={this.updateFeature}
                 />
             </form>
         )
