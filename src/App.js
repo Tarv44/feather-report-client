@@ -4,6 +4,7 @@ import ProductsBrowser from './ProductsBrowser/ProductsBrowser';
 import Compare from './Compare/Compare';
 import Admin from './Admin/Admin';
 import { Route } from 'react-router-dom';
+import Landing from './Landing/Landing';
 import './App.css';
 
 class App extends Component {
@@ -42,6 +43,7 @@ class App extends Component {
           <Route exact path={'/co/:co_path/products'} component={ProductsBrowser} />
           <Route exact path={'/co/:co_path/admin'} component={Admin}/>
           <Route exact path={'/compare'} component={Compare} />
+          <Route exact path={'/'} component={Landing} />
         </div>
       </ProductContext.Provider>
       
