@@ -6,6 +6,8 @@ import Admin from './Admin/Admin';
 import { Route } from 'react-router-dom';
 import Landing from './Landing/Landing';
 import Login from './Login/Login';
+import Nav from './Nav/Nav';
+import Footer from './Footer/Footer';
 import './App.css';
 
 class App extends Component {
@@ -48,11 +50,13 @@ class App extends Component {
     return (
       <ProductContext.Provider value={contextValue}>
         <div className="App">
+          <Nav current={this.state.company}/>
           <Route exact path={'/co/:co_path/products'} component={ProductsBrowser} />
           <Route exact path={'/co/:co_path/admin'} component={Admin}/>
           <Route exact path={'/compare'} component={Compare} />
           <Route exact path={'/login'} component={Login} />
           <Route exact path={'/'} component={Landing} />
+          <Footer />
         </div>
       </ProductContext.Provider>
       
