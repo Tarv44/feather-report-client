@@ -54,8 +54,6 @@ export default class ProductsBrowser extends Component {
             <main>
                 <header>
                     <h1>{this.state.company.name}</h1>
-                    <NavLink to={'/compare'}>Compare</NavLink>
-                    <p>Selected: {this.context.selected.length}/4</p>
                 </header>
                 <main className={styles.browser_main}>
                     <CatSelector 
@@ -68,6 +66,12 @@ export default class ProductsBrowser extends Component {
                         catFilter={this.state.catFilter}
                         handleSelected={this.updateSelected} 
                     /> 
+                    <div className={styles.float}>
+                        <p>{this.context.selected.length}/4</p>
+                        <NavLink to={'/compare'}>
+                            <button>Compare</button>
+                        </NavLink>
+                    </div>
                 </main>
             </main>
         )

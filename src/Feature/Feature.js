@@ -34,19 +34,18 @@ export default class Feature extends Component {
 
         const Feature = this.state.creating_new
             ? (
-                <div className={styles.select}>
+                <div className={styles.feature}>
                     <input 
                         onChange={e => this.updateFeature(e.target.value, this.props.index)} 
                         type='text' 
                     />
                     <button 
-                        className={styles.remove} 
+                        className={styles.create} 
                         onClick={e => this.submitFeature(e, e.target.value)}
                     >
                         Submit Feature
                     </button>
                     <button 
-                        className={styles.remove} 
                         onClick={e => this.props.removeFeature(e, this.props.index)}
                     >
                         Remove Feature
@@ -54,7 +53,7 @@ export default class Feature extends Component {
                 </div>
             )
             : (
-                <div className={styles.select}>
+                <div className={styles.feature}>
                     <select 
                         value={this.props.selected}
                         onChange={e => this.props.updateFeature(e.target.value, this.props.index)} 
@@ -63,13 +62,12 @@ export default class Feature extends Component {
                         {FeatureOptions}
                     </select>
                     <button 
-                        className={styles.remove} 
+                        className={styles.create} 
                         onClick={e => this.updateCreatingNew(e)}
                     >
                         Create New Feature
                     </button>
                     <button 
-                        className={styles.remove} 
                         onClick={e => this.props.removeFeature(e, this.props.index)}
                     >
                         Remove Feature

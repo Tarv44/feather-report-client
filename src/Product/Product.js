@@ -59,6 +59,7 @@ export default class Product extends Component {
             />
             : <ProductAction 
                 type={this.state.type} 
+                product={product}
             />
 
         return this.state.editing 

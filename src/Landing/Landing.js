@@ -18,8 +18,12 @@ export default class Landing extends Component {
                 <section>
                     <h2>Get Started</h2>
                     <p>Quisque quis viverra velit. Nulla in elit et felis posuere condimentum. Mauris egestas massa vel massa volutpat, fringilla venenatis mauris auctor. Pellentesque iaculis, dui ac pellentesque tincidunt, justo ante fringilla nisl, id posuere massa metus ut felis. Integer et erat vulputate, dignissim massa et, dictum mi. Duis non elit nibh. Nulla ullamcorper tortor at egestas dapibus. Mauris rhoncus eros ac cursus commodo. Cras pulvinar lobortis lacus ut vulputate. Etiam mauris nisi, egestas in orci quis, commodo gravida dolor. Quisque vel justo ligula. Quisque faucibus scelerisque lectus, eget auctor leo eleifend vel.</p>
-                    <NavLink to={'/login'}>Login</NavLink>
-                    <NavLink to={'/co/Sids/products'}>Sid's Kitchen Stuff</NavLink>
+                    <NavLink className={styles.button} to={'/login'}>
+                        Login
+                    </NavLink>
+                    <NavLink className={styles.button}to={'/co/Sids/products'}>
+                        Sid's Kitchen Stuff
+                    </NavLink>
                 </section>
             </main>
         )

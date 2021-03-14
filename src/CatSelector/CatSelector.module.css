@@ -1,14 +1,24 @@
 .buttons {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: space-between;
+    min-width: 100%;
 }
 
 .buttons button {
     margin-bottom: 20px;
+    min-width: 50%;
 }
 
 .section {
     min-width: 15%;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
+/* @media (min-width: 1280px) {
+
+} */

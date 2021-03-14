@@ -1,0 +1,9 @@
+.header {
+    text-align: center;
+}
+
+.customer {
+    border: solid black 1px;
+    padding: .25em 1em;
+    color: black;
+}

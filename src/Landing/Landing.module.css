@@ -1,0 +1,10 @@
+.button {
+    display: block;
+    border: solid 1px black;
+    padding: .25em 1em;
+    text-align: center;
+    align-self: center;
+    background-color: lightgrey;
+    margin-top: .5em;
+    color: black;
+}

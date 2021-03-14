@@ -79,8 +79,8 @@ export default class Login extends Component {
                     </div>
                     <button type='submit'>Login</button>
                     {/* {this.state.error.failed && <p className='error'>{this.state.error.message}</p>} */}
-                    <p>Don't have an account?</p>
-                    <NavLink className="login-here" to={'/signup'}>Signup here.</NavLink>
+                    {/* <p>Don't have an account?</p>
+                    <NavLink className="login-here" to={'/signup'}>Signup here.</NavLink> */}
                 </form>
             </main>
         )

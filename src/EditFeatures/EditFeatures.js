@@ -56,7 +56,7 @@ export default class EditFeatures extends Component {
         return (
             <fieldset>
                 <legend>Category and Features</legend>
-                <label htmlFor={`productCats-${id}`}>Category</label>
+                <h3 className={styles.label}>Category</h3>
                 <select 
                     id={`productCats-${id}`} 
                     onChange={e => this.updateCatFeatures(e.target.value)}
@@ -65,8 +65,10 @@ export default class EditFeatures extends Component {
                     <option>Select Category</option>
                     {catOptions}
                 </select>
-                <p>Features</p>
-                {FeatureComponents}
+                <h3 className={styles.label}>Features</h3>
+                {this.props.category === 'Select Category' 
+                    ? <p><i>Select a category to see features.</i></p>
+                    : FeatureComponents}
                 <button 
                     className={styles.addFeat} 
                     onClick={e => this.props.addFeature(e)}

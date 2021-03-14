@@ -1,8 +1,17 @@
 .main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 3%;
 }
 
-.main div {
-    max-width: 25%;
+
+
+@media (min-width: 1280px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .main div {
+        max-width: 25%;
+    }
 }

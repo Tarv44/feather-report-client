@@ -3,6 +3,13 @@
     flex-flow: row wrap;
 }
 
-.section div {
-    max-width: 25%;
+.section > :first-child {
+    margin-top: 0;
+}
+
+
+@media (min-width: 1280px) {
+    .section div {
+        max-width: 25%;
+    }
 }

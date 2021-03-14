@@ -4,6 +4,7 @@ import ProductContext from '../productContext';
 import EditProduct from '../EditProduct/EditProduct';
 import ProductsSection from '../ProductsSection/ProductsSection';
 import { prodWithFeat } from '../dummy-store';
+import { NavLink } from 'react-router-dom';
 
 export default class Admin extends Component {
     static contextType = ProductContext;
@@ -31,12 +32,15 @@ export default class Admin extends Component {
     render() {
         return (
             <>
-                <header>
+                <header className={styles.header}>
                     <h1>{this.context.company.name}</h1>
                     <h3>Admin Page</h3>
+                    <NavLink className={styles.customer} to={`/co/${this.context.company.path}/products`}>Customer Page</NavLink>
                 </header>
                 <main>
-                    <EditProduct addProduct={this.addProduct}/>
+                    <section>
+                        <EditProduct addProduct={this.addProduct}/>
+                    </section>
                     <ProductsSection 
                         products={this.state.products}
                         updateProduct={this.updateProduct}

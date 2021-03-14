@@ -1,18 +1,24 @@
-.productForm {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: solid black 3px;
-    min-width: 50%;
+    min-width: 100%;
     padding-bottom: 20px;
+    margin-top: 10px;
 }
 
-.productForm input,
-.productForm textarea,
-.productForm select {
+.form input,
+.form textarea,
+.form select {
     width: 80%;
 }
 
-.productForm fieldset {
+.form fieldset {
     width: 90%;
+}
+
+.submit {
+    font-size: 18px;
+    margin-top: 1em;
 }

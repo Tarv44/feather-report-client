@@ -1,6 +1,13 @@
-.select {
+.feature {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: solid black 1px;
+    padding: .25em 0 .5em;
 }
+
+.create {
+    margin-bottom: .25em;
+}
+

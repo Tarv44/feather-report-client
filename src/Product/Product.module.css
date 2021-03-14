@@ -6,17 +6,22 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
+    margin-top: 10px;
 }
 
 .content {
     max-width: 100% !important;
 }
 
-.content h2 {
-    min-height: 120px;
-}
+
 
 .notFeatured {
     text-decoration: line-through;
     opacity: .3;
+}
+
+@media (min-width: 1280px) {
+    .content h2 {
+        min-height: 120px;
+    }
 }

@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
@@ -24,6 +37,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   font-size: 24px;
   padding: .4em 0;
   width: 100%;
@@ -31,6 +45,24 @@ nav {
 
 nav a {
   text-decoration: none;
+}
+
+header {
+  padding: 3%;
+}
+
+section {
+  min-height: 200px;
+  padding:  3%;
+  background-color: #bbb;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 100%;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
 }
 
 footer {

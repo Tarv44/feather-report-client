@@ -31,7 +31,7 @@ export default class ProductAction extends Component {
         }
     }
 
-    setDisplay() {
+    setAction() {
         const type = this.props.type
         
         if (type === 'edit') {
@@ -75,17 +75,19 @@ export default class ProductAction extends Component {
 
         if (type === 'compare') {
             return (
-                <button
-                    className={`${styles.button }`}
-                >
-                    Buy Online
-                </button>
+                <a href={this.props.product.link} target='_blank'>
+                    <button
+                        className={`${styles.button }`}
+                    >
+                        Buy Online
+                    </button>
+                </a>
             )
         }
     }
 
     render() {
-        const action = this.setDisplay()
+        const action = this.setAction()
 
         return action
     }
