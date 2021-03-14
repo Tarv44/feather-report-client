@@ -75,7 +75,7 @@ export default class ProductAction extends Component {
 
         if (type === 'compare') {
             return (
-                <a href={this.props.product.link} target='_blank'>
+                <a href={this.props.product.link} target='_blank' rel="noreferrer">
                     <button
                         className={`${styles.button }`}
                     >
