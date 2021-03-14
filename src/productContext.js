@@ -2,7 +2,9 @@ import {createContext} from 'react';
 
 const productContext = createContext({
     company: {},
-    handleCompany: () => {}
+    handleCompany: () => {},
+    handleSelected: () => {},
+    handleBrowserPath: () => {}
 })
 
 export default productContext;

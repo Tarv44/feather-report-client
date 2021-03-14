@@ -49,6 +49,11 @@ export default class ProductsBrowser extends Component {
         this.setState({ products })
     }
 
+    handlePath = () => {
+        const path  = this.props.location.pathname
+        this.context.handleBrowserPath(path)
+    }
+
     render() {
         return (
             <main>
@@ -68,7 +73,7 @@ export default class ProductsBrowser extends Component {
                     /> 
                     <div className={styles.float}>
                         <p>{this.context.selected.length}/4</p>
-                        <NavLink to={'/compare'}>
+                        <NavLink onClick={e => this.handlePath()} to={'/compare'}>
                             <button>Compare</button>
                         </NavLink>
                     </div>

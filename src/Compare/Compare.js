@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './Compare.module.css';
 import ProductContext from '../productContext';
 import Product from '../Product/Product';
+import { NavLink } from 'react-router-dom';
 
 export default class Compare extends Component {
     static contextType = ProductContext;
@@ -39,8 +40,11 @@ export default class Compare extends Component {
         })
         return (
             <>
-                <header>
+                <header className={styles.header}>
                     <h1>Compare</h1>
+                    <NavLink to={this.context.browser_path} className={styles.return}>
+                        Return to Browse Products
+                    </NavLink>
                 </header>
                 <main className={styles.main}>
                     {products}

@@ -12,15 +12,42 @@ export default class Landing extends Component {
 
                 <section>
                     <h2>Intro</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus faucibus blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur euismod mi ac vulputate luctus. Cras efficitur luctus elit eget accumsan. Mauris sit amet eros consectetur eros ultricies imperdiet a ut risus. Curabitur tempus nisl eu risus accumsan vestibulum. Morbi euismod magna sit amet enim laoreet tincidunt. Nulla ante lacus, commodo nec laoreet sit amet, elementum quis sapien. Donec rutrum finibus felis.</p>
+                    <p>
+                        Looking to show off what makes each of your amazing products special? 
+                        Feather report is a platform that businesses can use to give their customers
+                        an easy-to-use process for comparing and contrasting the features of each 
+                        of their products.
+                    </p>
+                    <p>
+                        Why "Feather Report"? The goal is to provide customers the option to compare 
+                        products "of a different feather" while keeping the process focused on just 
+                        the important details or, in other words, making the report "light as a feather."
+                    </p>
                 </section>
 
                 <section>
                     <h2>Get Started</h2>
-                    <p>Quisque quis viverra velit. Nulla in elit et felis posuere condimentum. Mauris egestas massa vel massa volutpat, fringilla venenatis mauris auctor. Pellentesque iaculis, dui ac pellentesque tincidunt, justo ante fringilla nisl, id posuere massa metus ut felis. Integer et erat vulputate, dignissim massa et, dictum mi. Duis non elit nibh. Nulla ullamcorper tortor at egestas dapibus. Mauris rhoncus eros ac cursus commodo. Cras pulvinar lobortis lacus ut vulputate. Etiam mauris nisi, egestas in orci quis, commodo gravida dolor. Quisque vel justo ligula. Quisque faucibus scelerisque lectus, eget auctor leo eleifend vel.</p>
+                    <p>
+                        This is currently a static version for proving and testing the basic functionality
+                        of this service.
+                    </p>
+                    <p>
+                        To use this version as a business admin would to manage their products, select
+                        login and use the demo account:
+                    </p>
+                    <ul>
+                        <li>Email: "sids@email.com"</li>
+                        <li>Password: "1234"</li>
+                    </ul>
                     <NavLink className={styles.button} to={'/login'}>
                         Login
                     </NavLink>
+
+                    <p>
+                        To use this version as if you were a customer trying to browse 
+                        and compare products, select "Sid's Kitchen Stuff" to go directly
+                        to the product page.
+                    </p>
                     <NavLink className={styles.button}to={'/co/Sids/products'}>
                         Sid's Kitchen Stuff
                     </NavLink>

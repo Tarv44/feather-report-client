@@ -17,7 +17,8 @@ class App extends Component {
       name: '',
       path: ''
     },
-    selected: []
+    selected: [],
+    browser_path: ''
   }
 
   updateSelected = (action, product) => {
@@ -39,12 +40,18 @@ class App extends Component {
     })
   }
 
+  updateBrowserPath = (browser_path) => {
+    this.setState({ browser_path })
+  }
+
   render() {
     const contextValue = {
       company: this.state.company,
       selected: this.state.selected,
+      browser_path: this.state.browser_path,
       handleSelected: this.updateSelected,
-      handleCompany: this.updateCompany
+      handleCompany: this.updateCompany,
+      handleBrowserPath: this.updateBrowserPath
     }
 
     return (
