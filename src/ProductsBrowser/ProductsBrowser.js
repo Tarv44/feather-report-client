@@ -5,6 +5,9 @@ import {companies, categories, prodWithFeat} from '../dummy-store';
 import CatSelector from '../CatSelector/CatSelector';
 import ProductsSection from '../ProductsSection/ProductsSection';
 import { NavLink } from 'react-router-dom';
+import config from '../config';
+
+const { API_ENDPOINT } = config
 
 export default class ProductsBrowser extends Component {
     state = {
@@ -17,25 +20,26 @@ export default class ProductsBrowser extends Component {
     static contextType = ProductContext
 
     componentDidMount() {
-        const companyNameId = this.props.match.params.co_path
+        const co_path = this.props.match.params.co_path
 
-        const products = prodWithFeat.map(p => {
-            const isSelected = this.context.selected.findIndex(s => s.id === p.id) >= 0
-            if (isSelected) {
-                p.selected = true
-            } else {
-                p.selected = false
+        const options = {
+            method: 'GET',
+            headers: {
+                'content-type': 'application/json'
             }
-            return p
-        })
+        }
 
-
-
-        this.setState({ 
-            company: companies[companyNameId],
-            categories,
-            products
-        })
+        fetch(`${API_ENDPOINT}/companies/${co_path}/products`,options)
+            .then(res => {
+                if (!res.ok) {
+                    return res.json().then(err => { throw err })
+                }
+                return res.json()
+            })
+            .then(res => {
+                const { company, categories, products } = res
+                this.setState({ company, categories, products })
+            })
     }
 
     updateCatFilter = (catFilter) => {
