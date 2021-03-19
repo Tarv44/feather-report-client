@@ -29,7 +29,7 @@ export default class Feature extends Component {
 
     render() {
         const FeatureOptions = this.props.features.map((f, i) => {
-            return <option key={i}>{f.message}</option>
+            return <option key={i}>{f.title}</option>
         })
 
         const Feature = this.state.creating_new

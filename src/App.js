@@ -6,6 +6,7 @@ import Admin from './Admin/Admin';
 import { Route } from 'react-router-dom';
 import Landing from './Landing/Landing';
 import Login from './Login/Login';
+import Signup from './Signup/Signup';
 import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
 import './App.css';
@@ -62,6 +63,7 @@ class App extends Component {
           <Route exact path={'/co/:co_path/admin'} component={Admin}/>
           <Route exact path={'/compare'} component={Compare} />
           <Route exact path={'/login'} component={Login} />
+          <Route exact path={'/signup'} component={Signup} />
           <Route exact path={'/'} component={Landing} />
           <Footer />
         </div>

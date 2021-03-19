@@ -13,7 +13,9 @@ export default class Admin extends Component {
     static contextType = ProductContext;
 
     state = {
-        products: prodWithFeat
+        company: {},
+        categories: [],
+        products: []
     }
 
     componentDidMount() {
@@ -35,7 +37,7 @@ export default class Admin extends Component {
             })
             .then(res => {
                 const { company, categories, products } = res
-                this.setState({ company, categories, products })
+                this.setState({ company, categories, products})
             })
     }
 
@@ -63,7 +65,7 @@ export default class Admin extends Component {
                     <h3>Admin Page</h3>
                     <NavLink 
                         className={styles.customer} 
-                        to={`/co/${this.context.company.path}/products`}
+                        to={`/co/${this.context.company.pathname}/products`}
                     >
                         Customer Page
                     </NavLink>

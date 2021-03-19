@@ -3,6 +3,9 @@ import ProductContext from '../productContext';
 import styles from './EditFeatures.module.css';
 import { features, categories } from '../dummy-store';
 import Feature from '../Feature/Feature';
+import config from '../config';
+
+const { API_ENDPOINT } = config
 
 export default class EditFeatures extends Component {
     static contextType = ProductContext;
@@ -12,11 +15,29 @@ export default class EditFeatures extends Component {
     }
 
     componentDidMount() {
-        const category = this.props.category
-        const catFeatures = category !== 'Select Category' 
-            ? features[this.props.category]
-            : []
-        this.setState({ catFeatures})
+        const cat = this.props.category
+        if ( cat === 'Select Category' ) {
+            this.setState({ catFeatures: [] })
+        } else {
+            const options = {
+                method: 'GET',
+                headers: {
+                    'content-type': 'application/json'
+                }
+            }
+
+            fetch(`${API_ENDPOINT}/categories/${cat}/features`, options)
+                .then(res => {
+                    if (!res.ok) {
+                        return res.json().then(err => { throw err })
+                    }
+                    return res.json()
+                })
+                .then(res => {
+                    this.setState({catFeatures: res})
+                })
+        }
+        
     }
     
 
@@ -45,7 +66,7 @@ export default class EditFeatures extends Component {
                     features={this.state.catFeatures} 
                     index={i}
                     key={i}
-                    selected={f.message}
+                    selected={f.title}
                     updateFeature={this.props.updateFeature}
                     submitFeature={this.submitFeature}
                     removeFeature={this.props.removeFeature}

@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-// import styles from './Login.module.css';
-// import { NavLink } from 'react-router-dom';
+import styles from './Login.module.css';
+import { NavLink } from 'react-router-dom';
 import ValidationError from '../ValidationError';
 import ProductContext from '../productContext';
+import config from '../config';
 
 export default class Login extends Component {
     static contextType = ProductContext;
@@ -48,24 +49,41 @@ export default class Login extends Component {
         } 
     }
 
-    handleLoginSubmit(e) {
+    handleSubmit(e) {
         e.preventDefault()
-        const emailCorrect = this.state.email.value.toLowerCase() === 'sids@email.com'
-        const passwordCorrect = this.state.password.value.toLowerCase() === '1234'
-        if (emailCorrect && passwordCorrect) {
-            const company = {
-                name: `Sid's Kitchen Stuff`,
-                path: `Sids`
-            }
-            this.context.handleCompany(company)
-            this.props.history.push(`/co/${company.path}/admin`)
+        
+        const headers = {
+            'content-type': 'application/json'
         }
+
+        const body = {
+            email: this.state.email.value,
+            password: this.state.password.value,
+        }
+
+        const options = {
+            method: 'POST',
+            headers,
+            body: JSON.stringify(body)
+        }
+
+        fetch(`${config.API_ENDPOINT}/companies/login`, options)
+            .then(res => {
+                if (!res.ok) {
+                    return res.json().then(err => { throw err })
+                }
+                return res.json()
+            })
+            .then(comp => {
+                this.context.handleCompany(comp)
+                this.props.history.push(`/co/${comp.pathname}/admin`)
+            })
     }
 
     render() {
         return (
             <main className="signup-login">
-                <form autoComplete='off' className='login-form' onSubmit={e => this.handleLoginSubmit(e)}>
+                <form autoComplete='off' className='login-form' onSubmit={e => this.handleSubmit(e)}>
                     <h2>Login</h2>
                     <div className='form-group'>
                         <label htmlFor='email'>Email</label>
@@ -79,8 +97,8 @@ export default class Login extends Component {
                     </div>
                     <button type='submit'>Login</button>
                     {/* {this.state.error.failed && <p className='error'>{this.state.error.message}</p>} */}
-                    {/* <p>Don't have an account?</p>
-                    <NavLink className="login-here" to={'/signup'}>Signup here.</NavLink> */}
+                    <p>Don't have an account?</p>
+                    <NavLink className="login-here" to={'/signup'}>Signup here.</NavLink>
                 </form>
             </main>
         )

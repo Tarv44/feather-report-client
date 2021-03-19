@@ -37,7 +37,18 @@ export default class ProductsBrowser extends Component {
                 return res.json()
             })
             .then(res => {
-                const { company, categories, products } = res
+                const { company, categories } = res
+
+                const products = res.products.map(p => {
+                    const isSelected = this.context.selected.findIndex(s => s.id === p.id) > -1
+                    if (isSelected) {
+                        p.selected = true
+                    } else {
+                        p.selected = false
+                    }
+                    return p
+                })
+                
                 this.setState({ company, categories, products })
             })
     }
