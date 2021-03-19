@@ -35,7 +35,12 @@ export default class Admin extends Component {
                 <header className={styles.header}>
                     <h1>{this.context.company.name}</h1>
                     <h3>Admin Page</h3>
-                    <NavLink className={styles.customer} to={`/co/${this.context.company.path}/products`}>Customer Page</NavLink>
+                    <NavLink 
+                        className={styles.customer} 
+                        to={`/co/${this.context.company.path}/products`}
+                    >
+                        Customer Page
+                    </NavLink>
                 </header>
                 <main>
                     <section>
