@@ -4,7 +4,7 @@ import styles from './CatSelector.module.css';
 export default class CatSelector extends Component {
     render() {
         const catButtons = this.props.categories.map((c, i) => {
-            return <button onClick={e => this.props.handleFilter(c.title)} key={i}>{c.title}</button>
+            return <button onClick={e => this.props.handleFilter(c.id)} key={i}>{c.title}</button>
         })
 
         return (
