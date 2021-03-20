@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Feature.module.css';
+import config from '../config';
 
 export default class Feature extends Component {
     static defaultProps = {
@@ -22,9 +23,38 @@ export default class Feature extends Component {
 
     submitFeature(e) {
         e.preventDefault()
-        this.props.updateCatFeatures(this.state.new_feature)
-        this.props.updateProductFeatures(this.state.new_feature, this.props.index)
-        this.setState({ creating_new: false })
+
+        const headers = {
+            'content-type': 'application/json'
+        }
+
+        const body = {
+            title: this.state.new_feature,
+            category: this.props.category.id
+        }
+
+        const options = {
+            method: 'POST',
+            headers,
+            body: JSON.stringify(body)
+        }
+
+        fetch(`${config.API_ENDPOINT}/features/`, options)
+            .then(res => {
+                if (!res.ok) {
+                    return res.json().then(err => { throw err })
+                }
+                return res.json()
+            })
+            .then(feat => {
+                this.props.updateCatFeatures(feat, this.props.index)
+                this.setState({ creating_new: false })
+            })
+    }
+
+    updateProdFeature = (title) => {
+        const feature = this.props.features.find(f => f.title == title)
+        this.props.updateProdFeatures(feature, this.props.index)
     }
 
     render() {
@@ -56,7 +86,7 @@ export default class Feature extends Component {
                 <div className={styles.feature}>
                     <select 
                         value={this.props.selected}
-                        onChange={e => this.props.updateFeature(e.target.value, this.props.index)} 
+                        onChange={e => this.updateProdFeature(e.target.value)} 
                     >
                         <option>Select Feature</option>
                         {FeatureOptions}

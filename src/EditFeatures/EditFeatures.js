@@ -50,10 +50,11 @@ export default class EditFeatures extends Component {
     }
 
 
-    updateCatFeatures = (feature) => {
+    updateCatFeatures = (feature, index) => {
         const catFeatures = this.state.catFeatures
         catFeatures.push(feature)
         this.setState({ catFeatures })
+        this.props.updateProdFeatures(feature, index)
     }
 
     render() {
@@ -62,7 +63,6 @@ export default class EditFeatures extends Component {
         const catOptions = this.props.allCats.map((c, i) => {
             return <option id={c.id} key={i} >{c.title}</option>
         })
-        // console.log(this.props.allCats)
 
         const FeatureComponents = this.props.features.map((f, i) => {
             return (
@@ -71,9 +71,9 @@ export default class EditFeatures extends Component {
                     index={i}
                     key={i}
                     selected={f.title}
-                    category_id={f.category}
-                    updateProductFeatures={this.props.updateFeature}
+                    category={this.props.category}
                     updateCatFeatures={this.updateCatFeatures}
+                    updateProdFeatures={this.props.updateProdFeatures}
                     removeFeature={this.props.removeFeature}
                 />
             )

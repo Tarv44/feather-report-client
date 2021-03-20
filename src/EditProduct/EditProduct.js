@@ -18,11 +18,12 @@ export default class EditProduct extends Component {
 
     constructor(props) {
         super(props)
+
         const catSelected = props.allCats.findIndex(c => c.id == props.product.category) > -1
-        console.log(props.allCats)
         const category = catSelected
             ? this.props.allCats.find(c => c.id === props.product.category)
             : 'Select Category'
+
         this.state = {
             title: this.props.product.title,
             price: this.props.product.price,
@@ -60,7 +61,7 @@ export default class EditProduct extends Component {
 
     updateFeature = (f, i) => {
         const features = this.state.features
-        features[i].message = f
+        features[i] = f
         this.setState({ features })
     }
     
@@ -128,7 +129,7 @@ export default class EditProduct extends Component {
                     handleCategory={this.updateCategory}
                     removeFeature={this.removeFeature}
                     addFeature={this.addFeature}
-                    updateFeature={this.updateFeature}
+                    updateProdFeatures={this.updateFeature}
                     allCats={this.props.allCats}
                 />
                 {Submit}
