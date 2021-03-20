@@ -40,9 +40,7 @@ export default class Admin extends Component {
             })
     }
 
-    addProduct = (e, product) => {
-        e.preventDefault()
-        product.id = 99
+    addProduct = (product) => {
         const products = this.state.products
         products.unshift(product)
         this.setState(products)

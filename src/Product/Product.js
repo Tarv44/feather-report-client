@@ -19,8 +19,7 @@ export default class Product extends Component {
         this.setState({ selected: !this.state.selected })
     }
 
-    updateProduct = (e, product) => {
-        e.preventDefault()
+    updateProduct = (product) => {
         this.props.updateProduct(product)
         this.setState({ editing: false })
     }

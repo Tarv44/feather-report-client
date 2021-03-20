@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import styles from './EditProduct.module.css';
 import EditFeatures from '../EditFeatures/EditFeatures';
+import config from '../config';
+import ProductContext from '../productContext';
 
 export default class EditProduct extends Component {
+    static contextType = ProductContext
+
     static defaultProps = {
         product: {
             title: '',
             price: 0,
             description: '',
-            category: -1,
+            category: null,
             features: [],
             link: '',
             id: null,
@@ -79,11 +83,52 @@ export default class EditProduct extends Component {
         this.setState({ features })
     }
 
+    handleSubmit = (e) => {
+        e.preventDefault()
+
+        const body = this.state
+        body.features = this.state.features.map(f => { return f.id })
+        body.company = this.context.company.id
+        body.category = this.state.category.id
+
+        const headers = {
+            'content-type': 'application/json'
+        }
+        
+        const method = this.state.id === null ? 'POST' : 'PATCH'
+
+        const options = {
+            method,
+            headers,
+            body: JSON.stringify(body)
+        }
+
+
+        console.log('API called')
+        fetch(`${config.API_ENDPOINT}/products/`, options)
+            .then(res => {
+                if (!res.ok) {
+                    return res.json().then(err => { throw err })
+                }
+                return res.json()
+            })
+            .then(p => {
+                if (this.state.id === null) {
+                    this.props.addProduct(p)
+                } else {
+                    this.props.updateProduct(p)
+                }
+                this.setState({
+
+                })
+            })
+    }
+
     render() {
         const id = this.state.id
         const Submit = this.state.id === null
-            ? <button className={styles.submit} onClick={e => this.props.addProduct(e, this.state)}>Add Product</button>
-            : <button className={styles.submit} onClick={e => this.props.updateProduct(e, this.state)}>Update Product</button>
+            ? <button className={styles.submit} onClick={e => this.handleSubmit(e)}>Add Product</button>
+            : <button className={styles.submit} onClick={e => this.handleSubmit(e)}>Update Product</button>
 
         return (
             <form className={styles.form}>
