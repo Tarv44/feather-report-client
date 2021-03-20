@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styles from './ProductsBrowser.module.css';
 import ProductContext from '../productContext';
-import {companies, categories, prodWithFeat} from '../dummy-store';
 import CatSelector from '../CatSelector/CatSelector';
 import ProductsSection from '../ProductsSection/ProductsSection';
 import { NavLink } from 'react-router-dom';
@@ -48,7 +47,7 @@ export default class ProductsBrowser extends Component {
                     }
                     return p
                 })
-                
+
                 this.setState({ company, categories, products })
             })
     }

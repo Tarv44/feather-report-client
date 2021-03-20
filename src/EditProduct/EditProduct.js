@@ -8,22 +8,32 @@ export default class EditProduct extends Component {
             title: '',
             price: 0,
             description: '',
-            category: 'Select Category',
+            category: -1,
             features: [],
             link: '',
-            id: null
+            id: null,
+            allCats: []
         }
     }
 
-    state = {
-        title: this.props.product.title,
-        price: this.props.product.price,
-        description: this.props.product.description,
-        category: this.props.product.category,
-        features: this.props.product.features,
-        link: this.props.product.link,
-        id: this.props.product.id
+    constructor(props) {
+        super(props)
+        const catSelected = props.allCats.findIndex(c => c.id == props.product.category) > -1
+        console.log(props.allCats)
+        const category = catSelected
+            ? this.props.allCats.find(c => c.id === props.product.category)
+            : 'Select Category'
+        this.state = {
+            title: this.props.product.title,
+            price: this.props.product.price,
+            description: this.props.product.description,
+            category: category,
+            features: this.props.product.features,
+            link: this.props.product.link,
+            id: this.props.product.id
+        }
     }
+    
 
     updateTitle(title) {
         this.setState({ title })
@@ -44,7 +54,7 @@ export default class EditProduct extends Component {
     updateCategory = (category) => {
         this.setState({ 
             category,
-            features: [{message: 'Select Feature'}]  
+            features: [{title: ""}]  
         })
     }
 
@@ -119,6 +129,7 @@ export default class EditProduct extends Component {
                     removeFeature={this.removeFeature}
                     addFeature={this.addFeature}
                     updateFeature={this.updateFeature}
+                    allCats={this.props.allCats}
                 />
                 {Submit}
             </form>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Feature.module.css'
+import styles from './Feature.module.css';
 
 export default class Feature extends Component {
     static defaultProps = {
@@ -22,8 +22,8 @@ export default class Feature extends Component {
 
     submitFeature(e) {
         e.preventDefault()
-        this.props.submitFeature(this.state.new_feature)
-        this.props.updateFeature(this.state.new_feature, this.props.index)
+        this.props.updateCatFeatures(this.state.new_feature)
+        this.props.updateProductFeatures(this.state.new_feature, this.props.index)
         this.setState({ creating_new: false })
     }
 

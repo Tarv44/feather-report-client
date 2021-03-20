@@ -13,6 +13,7 @@ export default class ProductsSection extends Component {
                         type={this.props.type}
                         handleSelected={this.props.handleSelected}
                         updateProduct={this.props.updateProduct} 
+                        allCats={this.props.allCats}
                     />
                 })
             : this.props.products.map((p, i) => {
@@ -22,6 +23,7 @@ export default class ProductsSection extends Component {
                     type={this.props.type}
                     handleSelected={this.props.handleSelected}
                     updateProduct={this.props.updateProduct} 
+                    allCats={this.props.allCats}
                 />
             })
 

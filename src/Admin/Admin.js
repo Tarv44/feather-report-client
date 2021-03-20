@@ -3,7 +3,6 @@ import styles from './Admin.module.css';
 import ProductContext from '../productContext';
 import EditProduct from '../EditProduct/EditProduct';
 import ProductsSection from '../ProductsSection/ProductsSection';
-import { prodWithFeat } from '../dummy-store';
 import { NavLink } from 'react-router-dom';
 import config from '../config';
 
@@ -72,11 +71,15 @@ export default class Admin extends Component {
                 </header>
                 <main>
                     <section>
-                        <EditProduct addProduct={this.addProduct}/>
+                        <EditProduct
+                            allCats={this.state.categories} 
+                            addProduct={this.addProduct}
+                        />
                     </section>
                     <ProductsSection 
                         products={this.state.products}
                         updateProduct={this.updateProduct}
+                        allCats={this.state.categories}
                         type='edit'
                     />
                 </main>

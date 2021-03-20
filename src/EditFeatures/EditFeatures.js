@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import ProductContext from '../productContext';
 import styles from './EditFeatures.module.css';
-import { features, categories } from '../dummy-store';
 import Feature from '../Feature/Feature';
 import config from '../config';
 
@@ -16,49 +15,54 @@ export default class EditFeatures extends Component {
 
     componentDidMount() {
         const cat = this.props.category
-        if ( cat === 'Select Category' ) {
+        if ( cat.id === null ) {
             this.setState({ catFeatures: [] })
         } else {
-            const options = {
-                method: 'GET',
-                headers: {
-                    'content-type': 'application/json'
-                }
-            }
-
-            fetch(`${API_ENDPOINT}/categories/${cat}/features`, options)
-                .then(res => {
-                    if (!res.ok) {
-                        return res.json().then(err => { throw err })
-                    }
-                    return res.json()
-                })
-                .then(res => {
-                    this.setState({catFeatures: res})
-                })
+            this.fetchFeatures(this.props.category)
         }
         
     }
-    
 
-    updateCatFeatures(category) {
-        const catFeatures = features[category]
-        this.setState({ catFeatures})
-        this.props.handleCategory(category)
+    fetchFeatures = (cat) => {
+        const options = {
+            method: 'GET',
+            headers: {
+                'content-type': 'application/json'
+            }
+        }
+
+        fetch(`${API_ENDPOINT}/categories/${cat.id}/features`, options)
+            .then(res => {
+                if (!res.ok) {
+                    return res.json().then(err => { throw err })
+                }
+                return res.json()
+            })
+            .then(res => {
+                this.setState({catFeatures: res})
+            })
     }
 
-    submitFeature = (feature) => {
+    handleCategory = (catTitle) => {
+        const cat = this.props.allCats.find(c => c.title == catTitle)
+        this.props.handleCategory(cat)
+        this.fetchFeatures(cat)
+    }
+
+
+    updateCatFeatures = (feature) => {
         const catFeatures = this.state.catFeatures
-        catFeatures.push({message: feature})
+        catFeatures.push(feature)
         this.setState({ catFeatures })
     }
 
     render() {
         const id = this.props.id
 
-        const catOptions = categories.map((c, i) => {
-            return <option key={i} >{c}</option>
+        const catOptions = this.props.allCats.map((c, i) => {
+            return <option id={c.id} key={i} >{c.title}</option>
         })
+        // console.log(this.props.allCats)
 
         const FeatureComponents = this.props.features.map((f, i) => {
             return (
@@ -67,8 +71,9 @@ export default class EditFeatures extends Component {
                     index={i}
                     key={i}
                     selected={f.title}
-                    updateFeature={this.props.updateFeature}
-                    submitFeature={this.submitFeature}
+                    category_id={f.category}
+                    updateProductFeatures={this.props.updateFeature}
+                    updateCatFeatures={this.updateCatFeatures}
                     removeFeature={this.props.removeFeature}
                 />
             )
@@ -80,8 +85,8 @@ export default class EditFeatures extends Component {
                 <h3 className={styles.label}>Category</h3>
                 <select 
                     id={`productCats-${id}`} 
-                    onChange={e => this.updateCatFeatures(e.target.value)}
-                    value={this.props.category}
+                    onChange={e => this.handleCategory(e.target.value)}
+                    value={this.props.category.title}
                 >
                     <option>Select Category</option>
                     {catOptions}
