@@ -55,7 +55,8 @@ export default class Admin extends Component {
     }
 
     render() {
-        return (
+        return this.context.company.title 
+        ? (
             <>
                 <header className={styles.header}>
                     <h1>{this.context.company.name}</h1>
@@ -82,6 +83,12 @@ export default class Admin extends Component {
                     />
                 </main>
             </>
+        )
+        : (
+            <main>
+                <h2>Log in to use Admin page.</h2>
+                <NavLink to={'/login'}>Log In</NavLink>
+            </main>
         )
     }
 }

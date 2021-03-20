@@ -103,8 +103,6 @@ export default class EditProduct extends Component {
             body: JSON.stringify(body)
         }
 
-
-        console.log('API called')
         fetch(`${config.API_ENDPOINT}/products/`, options)
             .then(res => {
                 if (!res.ok) {
