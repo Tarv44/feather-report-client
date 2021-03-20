@@ -66,6 +66,7 @@ export default class Product extends Component {
                 updateProduct={this.updateProduct} 
                 product={product}
                 allCats={this.props.allCats}
+                handleCats={this.props.handleCats}
             />
             : (
                 <div className={styles.product}>

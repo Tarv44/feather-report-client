@@ -53,7 +53,7 @@ export default class Feature extends Component {
     }
 
     updateProdFeature = (title) => {
-        const feature = this.props.features.find(f => f.title == title)
+        const feature = this.props.features.find(f => f.title === title)
         this.props.updateProdFeatures(feature, this.props.index)
     }
 
@@ -71,7 +71,7 @@ export default class Feature extends Component {
                     />
                     <button 
                         className={styles.create} 
-                        onClick={e => this.submitFeature(e, e.target.value)}
+                        onClick={e => this.submitFeature(e)}
                     >
                         Submit Feature
                     </button>

@@ -55,6 +55,12 @@ export default class Admin extends Component {
         this.setState({ products })
     }
 
+    updateCats = (cat) => {
+        const categories = this.state.categories
+        categories.push(cat)
+        this.setState({ categories })
+    }
+
     render() {
         return this.context.company.title 
         ? (
@@ -74,12 +80,14 @@ export default class Admin extends Component {
                         <EditProduct
                             allCats={this.state.categories} 
                             addProduct={this.addProduct}
+                            handleCats={this.updateCats}
                         />
                     </section>
                     <ProductsSection 
                         products={this.state.products}
                         updateProduct={this.updateProduct}
                         allCats={this.state.categories}
+                        handleCats={this.updateCats}
                         type='edit'
                     />
                 </main>

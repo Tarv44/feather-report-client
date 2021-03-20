@@ -23,7 +23,7 @@ export default class EditProduct extends Component {
     constructor(props) {
         super(props)
 
-        const catSelected = props.allCats.findIndex(c => c.id == props.product.category) > -1
+        const catSelected = props.allCats.findIndex(c => c.id === props.product.category) > -1
         const category = catSelected
             ? this.props.allCats.find(c => c.id === props.product.category)
             : 'Select Category'
@@ -116,10 +116,18 @@ export default class EditProduct extends Component {
                 } else {
                     this.props.updateProduct(p)
                 }
-                this.setState({
-
-                })
             })
+    }
+
+    handleCats = (category) => {
+        this.setState({ 
+            category,
+            features: [{
+                title: '',
+                id: null
+            }] 
+        })
+        this.props.handleCats(category)
     }
 
     render() {
@@ -174,6 +182,7 @@ export default class EditProduct extends Component {
                     addFeature={this.addFeature}
                     updateProdFeatures={this.updateFeature}
                     allCats={this.props.allCats}
+                    handleCats={this.handleCats}
                 />
                 {Submit}
             </form>

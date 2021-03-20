@@ -5,7 +5,7 @@ import Product from '../Product/Product';
 export default class ProductsSection extends Component {
     render() {
         const productDivs = this.props.catFilter 
-            ? this.props.products.filter(p => p.category == this.props.catFilter)
+            ? this.props.products.filter(p => p.category === this.props.catFilter)
                 .map((p, i) => {
                     return <Product 
                         productData={p} 
@@ -14,6 +14,7 @@ export default class ProductsSection extends Component {
                         handleSelected={this.props.handleSelected}
                         updateProduct={this.props.updateProduct} 
                         allCats={this.props.allCats}
+                        handleCats={this.props.handleCats}
                     />
                 })
             : this.props.products.map((p, i) => {
@@ -24,6 +25,7 @@ export default class ProductsSection extends Component {
                     handleSelected={this.props.handleSelected}
                     updateProduct={this.props.updateProduct} 
                     allCats={this.props.allCats}
+                    handleCats={this.props.handleCats}
                 />
             })
 
