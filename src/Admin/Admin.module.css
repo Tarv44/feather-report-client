@@ -1,5 +1,10 @@
 .header {
     text-align: center;
+    min-width: 100%;
+}
+
+.main {
+    min-width: 100%;
 }
 
 .customer {

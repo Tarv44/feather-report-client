@@ -72,7 +72,7 @@ export default class ProductsBrowser extends Component {
         return (
             <main>
                 <header>
-                    <h1>{this.state.company.name}</h1>
+                    <h1>{this.state.company.title}</h1>
                 </header>
                 <main className={styles.browser_main}>
                     <CatSelector 

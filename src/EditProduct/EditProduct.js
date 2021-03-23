@@ -26,7 +26,10 @@ export default class EditProduct extends Component {
         const catSelected = props.allCats.findIndex(c => c.id === props.product.category) > -1
         const category = catSelected
             ? this.props.allCats.find(c => c.id === props.product.category)
-            : 'Select Category'
+            : {
+                title: 'Select Category',
+                id: null
+            }
 
         this.state = {
             title: this.props.product.title,
@@ -113,6 +116,18 @@ export default class EditProduct extends Component {
             .then(p => {
                 if (this.state.id === null) {
                     this.props.addProduct(p)
+                    this.setState({
+                        title: '',
+                        price: 0,
+                        description: '',
+                        category: {
+                            title: '',
+                            id: null
+                        },
+                        features: [],
+                        link: '',
+                        id: null
+                    })
                 } else {
                     this.props.updateProduct(p)
                 }

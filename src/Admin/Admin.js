@@ -48,7 +48,6 @@ export default class Admin extends Component {
     }
 
     updateProduct = (product) => {
-        console.log('Update running')
         const products = this.state.products
         const i = products.findIndex(p => p.id === product.id)
         products[i] = product
@@ -66,7 +65,7 @@ export default class Admin extends Component {
         ? (
             <>
                 <header className={styles.header}>
-                    <h1>{this.context.company.name}</h1>
+                    <h1>{this.context.company.title}</h1>
                     <h3>Admin Page</h3>
                     <NavLink 
                         className={styles.customer} 
@@ -75,7 +74,7 @@ export default class Admin extends Component {
                         Customer Page
                     </NavLink>
                 </header>
-                <main>
+                <main className={styles.main}>
                     <section>
                         <EditProduct
                             allCats={this.state.categories} 
