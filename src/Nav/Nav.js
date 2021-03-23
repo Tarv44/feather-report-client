@@ -3,7 +3,7 @@ import styles from './Nav.module.css';
 import logo from '../img/F.png';
 
 export default function Nav(props) {
-    const links = Boolean(props.current.name) 
+    const links = Boolean(props.current.title) 
         ? <div className={styles.links}>
             <NavLink to={`/co/${props.current.path}/admin`}>Account</NavLink>
         </div>

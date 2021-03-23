@@ -18,7 +18,7 @@ export default class Admin extends Component {
     }
 
     componentDidMount() {
-        const co_path = this.props.match.params.co_path
+        const co_path = this.context.company.pathname
 
         const options = {
             method: 'GET',
@@ -27,17 +27,19 @@ export default class Admin extends Component {
             }
         }
 
-        fetch(`${API_ENDPOINT}/companies/${co_path}/products`,options)
-            .then(res => {
-                if (!res.ok) {
-                    return res.json().then(err => { throw err })
-                }
-                return res.json()
-            })
-            .then(res => {
-                const { company, categories, products } = res
-                this.setState({ company, categories, products})
-            })
+        if (co_path !== undefined) {
+            fetch(`${API_ENDPOINT}/companies/${co_path}/products`,options)
+                .then(res => {
+                    if (!res.ok) {
+                        return res.json().then(err => { throw err })
+                    }
+                    return res.json()
+                })
+                .then(res => {
+                    const { company, categories, products } = res
+                    this.setState({ company, categories, products})
+                })
+        }
     }
 
     addProduct = (product) => {
