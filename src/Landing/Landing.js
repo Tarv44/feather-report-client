@@ -37,7 +37,7 @@ export default class Landing extends Component {
                     </p>
                     <ul>
                         <li>Email: "sids@email.com"</li>
-                        <li>Password: "1234"</li>
+                        <li>Password: "demo1234"</li>
                     </ul>
                     <NavLink className={styles.button} to={'/login'}>
                         Login
