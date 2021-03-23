@@ -77,6 +77,14 @@ export default class Login extends Component {
                 this.context.handleCompany(comp)
                 this.props.history.push(`/co/${comp.pathname}/admin`)
             })
+            .catch(err => {
+                this.setState({
+                    error: {
+                        failed: true,
+                        message: err.error.message
+                    }
+                })
+            })
     }
 
     render() {
@@ -95,7 +103,7 @@ export default class Login extends Component {
                         {this.state.password.touched && <ValidationError message={this.validatePassword()}/>}
                     </div>
                     <button type='submit'>Login</button>
-                    {/* {this.state.error.failed && <p className='error'>{this.state.error.message}</p>} */}
+                    {this.state.error.failed && <p className='error'>{this.state.error.message}</p>}
                     <p>Don't have an account?</p>
                     <NavLink className="login-here" to={'/signup'}>Signup here.</NavLink>
                 </form>
