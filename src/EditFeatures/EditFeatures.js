@@ -64,8 +64,6 @@ export default class EditFeatures extends Component {
     }
 
     render() {
-        const id = this.props.id
-
         const catOptions = this.props.allCats.map((c, i) => {
             return <option id={c.id} key={i} >{c.title}</option>
         })

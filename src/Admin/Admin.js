@@ -5,7 +5,6 @@ import EditProduct from '../EditProduct/EditProduct';
 import ProductsSection from '../ProductsSection/ProductsSection';
 import { NavLink } from 'react-router-dom';
 import config from '../config';
-import Login from '../Login/Login';
 
 const { API_ENDPOINT } = config
 
