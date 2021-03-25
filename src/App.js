@@ -26,7 +26,6 @@ class App extends Component {
     if (action === 'add') {
       const selected = this.state.selected
       selected.push(product)
-      console.log(selected)
       this.setState({ selected })
     }
     if (action === 'remove') {
