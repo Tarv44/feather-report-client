@@ -1,4 +1,4 @@
 const config = {
-    API_ENDPOINT: 'http://localhost:8000/api' // process.env.REACT_APP_API_ENDPOINT
+    API_ENDPOINT: process.env.REACT_APP_API_ENDPOINT
 }
 export default config;

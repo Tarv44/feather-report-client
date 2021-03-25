@@ -8,7 +8,7 @@ export default class Landing extends Component {
         return (
             <main className={styles.main}>
                 <header className={styles.header}>
-                    <img src={banner}/>
+                    <img src={banner} alt={"banner"}/>
                 </header>
 
                 <section className={styles.intro}>
