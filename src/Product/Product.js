@@ -62,12 +62,16 @@ export default class Product extends Component {
             />
 
         return this.state.editing 
-            ? <EditProduct 
-                updateProduct={this.updateProduct} 
-                product={product}
-                allCats={this.props.allCats}
-                handleCats={this.props.handleCats}
-            />
+            ? (
+                <div className={styles.edit}>
+                    <EditProduct 
+                        updateProduct={this.updateProduct} 
+                        product={product}
+                        allCats={this.props.allCats}
+                        handleCats={this.props.handleCats}
+                    />
+                </div>
+            )
             : (
                 <div className={styles.product}>
                     <div className={styles.content}>

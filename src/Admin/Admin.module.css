@@ -12,3 +12,17 @@
     padding: .25em 1em;
     color: #26547C;
 }
+
+@media (min-width: 1200px) {
+    .main {
+        padding: 0 3%;
+    }
+
+    .edit {
+        padding: 0 0 3%;
+    }
+
+    .productSection {
+        padding: 0 3%;
+    }
+}

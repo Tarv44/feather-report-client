@@ -76,14 +76,14 @@ export default class Admin extends Component {
                     </NavLink>
                 </header>
                 <main className={styles.main}>
-                    <section>
+                    <section className={styles.edit}>
                         <EditProduct
                             allCats={this.state.categories} 
                             addProduct={this.addProduct}
                             handleCats={this.updateCats}
                         />
                     </section>
-                    <ProductsSection 
+                    <ProductsSection
                         products={this.state.products}
                         updateProduct={this.updateProduct}
                         allCats={this.state.categories}

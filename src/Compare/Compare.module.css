@@ -5,7 +5,7 @@
 .main {
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 0 3% 3%;
 }
 
 .return {
@@ -14,12 +14,30 @@
     color: #26547C;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
     .main {
-        flex-direction: row;
+        flex-flow: row wrap;
     }
 
-    .main div {
-        max-width: 25%;
+    .main > div {
+        max-width: 49.5%;
+    }
+
+    .main > div:nth-child(odd) {
+        margin-right: 1%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .main > div {
+        max-width: 24.4%;
+    }
+
+    .main > div:nth-child(1n) {
+        margin-right: .8%;
+    }
+
+    .main > div:last-child {
+        margin-right: 0;
     }
 }

@@ -244,7 +244,7 @@ export default class Signup extends Component {
                         <input type='password' name='confirmPassword' id='confirmPassword' onChange={e => this.updateConfirmPassword(e.target.value)}/>
                         {this.state.confirmPassword.touched && <ValidationError message={this.validateConfirmPassword()}/>}
                     </div>
-                    {this.state.error.failed && <p className='error'>{this.state.error.message}</p>}
+                    {this.state.error.failed && <p className='error res-error'>{this.state.error.message}</p>}
                     <button disabled={this.disableSubmit()} type='submit'>Submit</button>
                     <p>Already have an account?</p>
                     <NavLink className="login-here" to={'/login'}>Login here.</NavLink>

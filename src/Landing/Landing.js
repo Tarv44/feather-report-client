@@ -29,14 +29,14 @@ export default class Landing extends Component {
                 <section className={styles.get_started}>
                     <h2>Get Started</h2>
                     <p>
-                        This is currently a static version for proving and testing the basic functionality
-                        of this service.
+                        This is currently a demo version for proving and testing the basic value
+                        of Feather Report's service.
                     </p>
                     <p>
-                        To use this version as a business admin would to manage their products, select
+                        To use this version as a business admin would use it to manage their products, select
                         login and use the demo account:
                     </p>
-                    <ul>
+                    <ul className={styles.account}>
                         <li>Email: "sids@email.com"</li>
                         <li>Password: "demo1234"</li>
                     </ul>

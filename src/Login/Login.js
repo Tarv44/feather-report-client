@@ -104,7 +104,7 @@ export default class Login extends Component {
                         <input type='password' name='password' id='password' onChange={e => this.updatePassword(e.target.value)}/>
                         {this.state.password.touched && <ValidationError message={this.validatePassword()}/>}
                     </div>
-                    {this.state.error.failed && <p className='error'>{this.state.error.message}</p>}
+                    {this.state.error.failed && <p className='error res-error'>{this.state.error.message}</p>}
                     <button type='submit'>Submit</button>
                     <p>Don't have an account?</p>
                     <NavLink className="login-here" to={'/signup'}>Signup here.</NavLink>

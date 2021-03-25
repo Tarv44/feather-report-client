@@ -17,6 +17,9 @@
 
 .error {
   color: #EF476F;
-  margin-top: 0;
+  margin: 0;
+}
+
+.res-error {
   margin-bottom: 1em;
 }

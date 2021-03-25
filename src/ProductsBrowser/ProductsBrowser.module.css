@@ -1,3 +1,7 @@
+.header {
+    text-align: center;
+}
+
 .browser_main {
     display: flex;
     flex-direction: column;
@@ -19,8 +23,8 @@
     width: 100px;
     height: 100px;
     padding: 4px;
-    box-shadow: 0 3px 10px 2px grey;
     text-align: center;
+    box-shadow: 0 1px 10px 3px rgba(0,0,0,.2);
 }
 
 .float p {

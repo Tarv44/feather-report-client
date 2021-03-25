@@ -1,6 +1,7 @@
 .header {
     background-color: #FFCAF5;
     padding: 0;
+    text-align: center;
 }
 
 .header img {
@@ -24,6 +25,10 @@
     border-bottom: 5px #26547C solid;
 }
 
+.account {
+    margin-top: 0;
+}
+
 .button {
     display: block;
     padding: .6em 1em;
@@ -35,4 +40,14 @@
     border: solid #000 2px;
     border-radius: 3px;
     box-shadow: 0 3px 10px 3px rgba(0,0,0,.2);
+}
+
+@media (min-width: 1200px) {
+    .header img {
+        max-width: 50%;
+    }
+
+    .button {
+        align-self: flex-start;
+    }
 }

@@ -71,13 +71,14 @@ export default class ProductsBrowser extends Component {
     render() {
         return (
             <main>
-                <header>
+                <header className={styles.header}>
                     <h1>{this.state.company.title}</h1>
                 </header>
                 <main className={styles.browser_main}>
                     <CatSelector 
                         categories={this.state.categories}
                         handleFilter={this.updateCatFilter}
+                        catFilter={this.state.catFilter}
                     />
                     <ProductsSection 
                         products={this.state.products} 
