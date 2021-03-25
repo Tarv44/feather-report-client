@@ -11,21 +11,31 @@
     margin-bottom: .5em;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    background: grey;
+    align-items: center;
+    justify-content: center;
+    background: #FFCAF5;
     border: solid black 1px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     padding: 4px;
     box-shadow: 0 3px 10px 2px grey;
+    text-align: center;
 }
 
 .float p {
-    margin: 0;
-    margin-bottom: .25em;
-    color: white;
+    color: black;
 }
 
-.float button {
-    font-size: 18px;
+.compare,
+.click {
+    font-size: 19px;
+    margin: 0;
+}
+
+.count {
+    font-size: 14px;
+    margin: 0;
 }
 
 @media (min-width: 1280px) {

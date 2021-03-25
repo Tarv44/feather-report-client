@@ -9,8 +9,9 @@
 }
 
 .return {
-    border: solid black 1px;
+    border: solid #26547C 1px;
     padding: .25em 1em;
+    color: #26547C;
 }
 
 @media (min-width: 1280px) {

@@ -8,11 +8,7 @@
     margin-top: 10px;
 }
 
-.form input,
-.form textarea,
-.form select {
-    width: 80%;
-}
+
 
 .form fieldset {
     width: 90%;
@@ -21,4 +17,10 @@
 .submit {
     font-size: 18px;
     margin-top: 1em;
+    background-color: #26547C;
+    color: #fff;
+    border: solid black 2px;
+    border-radius: 3px;
+    padding: .3em 1em;
+    box-shadow: 0 1px 10px 3px rgba(0,0,0,.1);
 }

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import ValidationError from '../ValidationError';
 import ProductContext from '../productContext';
 import config from '../config';
+import styles from './Signup.module.css'
 
 
 export default class Signup extends Component {
@@ -92,6 +93,8 @@ export default class Signup extends Component {
         const pathname = this.state.pathname.value.trim();
         if (pathname.length === 0) {
           return 'Pathname is required';
+        } else if (pathname.includes(" ")) {
+            return "No spaces allowed"
         }
     }
 
@@ -209,10 +212,9 @@ export default class Signup extends Component {
 
     render() {
         return (
-            <main className="signup-login">
-                <form autoComplete='off' className='signup-form' onSubmit={e => this.handleSubmit(e)}>
+            <main className={`signup-login ${styles.main}`}>
+                <form autoComplete='off' onSubmit={e => this.handleSubmit(e)}>
                     <h2>Signup</h2>
-                    {this.state.error.failed && <p className='error'>{this.state.error.message}</p>}
                     <div className='form-group'>
                         <label htmlFor='title'>Business Name</label>
                         <input type='text' name='title' id='title' onChange={e => this.updateTitle(e.target.value)}/>
@@ -220,10 +222,10 @@ export default class Signup extends Component {
                     </div>
                     <div className='form-group'>
                         <label htmlFor='pathname'>URL Pathname</label>
-                        <input type='text' name='pathname' id='pathname' onChange={e => this.updatePathname(e.target.value)}/>
+                        <input type='text' maxLength={20} name='pathname' id='pathname' onChange={e => this.updatePathname(e.target.value)}/>
                         {this.state.pathname.touched
-                        && <p>
-                            Ex: www.FeatherReport.biz/co/{this.state.pathname.value}/products
+                        && <p className={styles.ex}>
+                            Ex: .biz/co/{this.state.pathname.value}/products
                         </p>}
                         {this.state.pathname.touched && <ValidationError message={this.validatePathname()}/>}
                     </div>
@@ -242,7 +244,8 @@ export default class Signup extends Component {
                         <input type='password' name='confirmPassword' id='confirmPassword' onChange={e => this.updateConfirmPassword(e.target.value)}/>
                         {this.state.confirmPassword.touched && <ValidationError message={this.validateConfirmPassword()}/>}
                     </div>
-                    <button disabled={this.disableSubmit()} type='submit'>Signup</button>
+                    {this.state.error.failed && <p className='error'>{this.state.error.message}</p>}
+                    <button disabled={this.disableSubmit()} type='submit'>Submit</button>
                     <p>Already have an account?</p>
                     <NavLink className="login-here" to={'/login'}>Login here.</NavLink>
                 </form>

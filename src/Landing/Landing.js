@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './Landing.module.css'
+import banner from '../img/banner.png'
 
 export default class Landing extends Component {
     render() {
         return (
-            <main>
-                <header>
-                    <h1>Feather Report</h1>
+            <main className={styles.main}>
+                <header className={styles.header}>
+                    <img src={banner}/>
                 </header>
 
-                <section>
+                <section className={styles.intro}>
                     <h2>Intro</h2>
                     <p>
                         Looking to show off what makes each of your amazing products special? 
@@ -25,7 +26,7 @@ export default class Landing extends Component {
                     </p>
                 </section>
 
-                <section>
+                <section className={styles.get_started}>
                     <h2>Get Started</h2>
                     <p>
                         This is currently a static version for proving and testing the basic functionality

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.css';
-import logo from '../img/F.png';
+import logo from '../img/logo.png';
 
 export default function Nav(props) {
     const links = Boolean(props.current.title) 

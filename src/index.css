@@ -11,6 +11,16 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: Verdana;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
@@ -23,7 +33,9 @@ select {
 }
 
 input[type='text'],
-input[type='password'] {
+input[type='password'],
+textarea, 
+select {
   border: none;
   background-color: #acacac;
   color: white;
@@ -31,6 +43,14 @@ input[type='password'] {
   font-size: 16px;
   width: 100%;
   padding: .3em;
+}
+
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  max-width: 100%;
 }
 
 nav {
@@ -54,15 +74,10 @@ header {
 section {
   min-height: 200px;
   padding:  3%;
-  background-color: #bbb;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  min-width: 100%;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
+  max-width: 100%;
 }
 
 footer {

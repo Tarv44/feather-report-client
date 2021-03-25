@@ -14,11 +14,20 @@
     max-width: 100% !important;
 }
 
+.featured,
+.notFeatured {
+    display: block;
+    width: 100%;
+    padding: .3em .5em;
+}
 
+.featured {
+    background-color: #06D6A0;
+}
 
 .notFeatured {
-    text-decoration: line-through;
-    opacity: .3;
+    background-color: gray;
+    opacity: .5;
 }
 
 @media (min-width: 1280px) {

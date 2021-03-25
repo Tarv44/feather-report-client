@@ -182,7 +182,8 @@ export default class EditProduct extends Component {
                     />
                     <label htmlFor={`productLink-${id}`}>Buy Online Link</label>
                     <input
-                        name="link" 
+                        name="link"
+                        type="text" 
                         id={`productLink-${id}`}
                         value={this.state.link}
                         onChange={e => this.updateLink(e.target.value)} 

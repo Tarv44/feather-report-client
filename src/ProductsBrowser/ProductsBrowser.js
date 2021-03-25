@@ -85,12 +85,11 @@ export default class ProductsBrowser extends Component {
                         catFilter={this.state.catFilter}
                         handleSelected={this.updateSelected} 
                     /> 
-                    <div className={styles.float}>
-                        <p>{this.context.selected.length}/4</p>
-                        <NavLink onClick={e => this.handlePath()} to={'/compare'}>
-                            <button>Compare</button>
-                        </NavLink>
-                    </div>
+                    <NavLink className={styles.float} onClick={e => this.handlePath()} to={'/compare'}>
+                        <p className={styles.click}>Click to</p>
+                        <p className={styles.compare}>Compare</p>
+                        <p className={styles.count}>{this.context.selected.length}/4</p>
+                    </NavLink>
                 </main>
             </main>
         )

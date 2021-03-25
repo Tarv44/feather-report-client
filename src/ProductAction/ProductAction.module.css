@@ -1,15 +1,19 @@
 .button {
     font-size: 16px;
-    background-color: white;
-    border: solid black 3px;
     margin-bottom: 20px;
+    background-color: #26547C;
+    color: #fff;
+    border: solid black 2px;
+    border-radius: 3px;
+    padding: .3em 1em;
+    box-shadow: 0 1px 10px 3px rgba(0,0,0,.1);
 }
 
 .selected {
-    background-color: black;
-    color: white;
+    background-color: #FFCAF5;
+    color: #000;
 }
 
 .maxed {
-    color: red;
+    background-color: #EF476F;
 }

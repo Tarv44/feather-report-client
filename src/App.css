@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
+  max-width: 100%;
 }
 
 .form-group {
@@ -15,9 +16,7 @@
 }
 
 .error {
-  text-align: center;
-  color: red;
-  margin-top: .2em;
-  margin-bottom: 0;
-  align-self: center;
+  color: #EF476F;
+  margin-top: 0;
+  margin-bottom: 1em;
 }

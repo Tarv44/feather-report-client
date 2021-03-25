@@ -31,7 +31,7 @@ export default class Product extends Component {
             ? this.props.allFeatures.map((f, i) => {
                 for (let l = 0; l < product.features.length; l++) {
                     if (product.features[l].id === f.id) {
-                        return <li key={i} id={f.id}>{f.title}</li>
+                        return <li key={i} id={f.id} className={styles.featured}>{f.title}</li>
                     }
                 }
                 return <li key={i} id={f.id} className={styles.notFeatured}>{f.title}</li>

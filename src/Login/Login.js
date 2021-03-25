@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import ValidationError from '../ValidationError';
 import ProductContext from '../productContext';
 import config from '../config';
+import styles from './Login.module.css'
 
 export default class Login extends Component {
     static contextType = ProductContext;
@@ -68,6 +69,7 @@ export default class Login extends Component {
 
         fetch(`${config.API_ENDPOINT}/companies/login`, options)
             .then(res => {
+                console.log(res)
                 if (!res.ok) {
                     return res.json().then(err => { throw err })
                 }
@@ -89,7 +91,7 @@ export default class Login extends Component {
 
     render() {
         return (
-            <main className="signup-login">
+            <main className={styles.main}>
                 <form autoComplete='off' className='login-form' onSubmit={e => this.handleSubmit(e)}>
                     <h2>Login</h2>
                     <div className='form-group'>
@@ -102,8 +104,8 @@ export default class Login extends Component {
                         <input type='password' name='password' id='password' onChange={e => this.updatePassword(e.target.value)}/>
                         {this.state.password.touched && <ValidationError message={this.validatePassword()}/>}
                     </div>
-                    <button type='submit'>Login</button>
                     {this.state.error.failed && <p className='error'>{this.state.error.message}</p>}
+                    <button type='submit'>Submit</button>
                     <p>Don't have an account?</p>
                     <NavLink className="login-here" to={'/signup'}>Signup here.</NavLink>
                 </form>
