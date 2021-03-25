@@ -22,7 +22,8 @@
 
 .links a {
     display: block;
-    padding: .5em .5em;
+    padding: .3em .5em;
+    font-size: 20px;
     text-align: center;
     align-self: center;
     background-color: #FFCAF5;
