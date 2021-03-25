@@ -56,6 +56,7 @@ exports[`----- EditProduct ----- renders the UI as expected 1`] = `
       id="productLink-null"
       name="link"
       onChange={[Function]}
+      type="text"
       value=""
     />
   </fieldset>

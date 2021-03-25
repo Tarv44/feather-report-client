@@ -1,13 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`----- Landing ----- renders the UI as expected 1`] = `
-<main>
-  <header>
-    <h1>
-      Feather Report
-    </h1>
+<main
+  className="main"
+>
+  <header
+    className="header"
+  >
+    <img
+      alt="banner"
+      src="banner.png"
+    />
   </header>
-  <section>
+  <section
+    className="intro"
+  >
     <h2>
       Intro
     </h2>
@@ -18,17 +25,21 @@ exports[`----- Landing ----- renders the UI as expected 1`] = `
       Why "Feather Report"? The goal is to provide customers the option to compare products "of a different feather" while keeping the process focused on just the important details or, in other words, making the report "light as a feather."
     </p>
   </section>
-  <section>
+  <section
+    className="get_started"
+  >
     <h2>
       Get Started
     </h2>
     <p>
-      This is currently a static version for proving and testing the basic functionality of this service.
+      This is currently a demo version for proving and testing the basic value of Feather Report's service.
     </p>
     <p>
-      To use this version as a business admin would to manage their products, select login and use the demo account:
+      To use this version as a business admin would use it to manage their products, select login and use the demo account:
     </p>
-    <ul>
+    <ul
+      className="account"
+    >
       <li>
         Email: "sids@email.com"
       </li>

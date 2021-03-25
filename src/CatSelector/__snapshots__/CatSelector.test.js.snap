@@ -11,16 +11,19 @@ exports[`----- CatSelector ----- renders the UI as expected 1`] = `
     className="buttons"
   >
     <button
+      id={null}
       onClick={[Function]}
     >
       Knives
     </button>
     <button
+      id={null}
       onClick={[Function]}
     >
       Blenders
     </button>
     <button
+      id={null}
       onClick={[Function]}
     >
       Toasters

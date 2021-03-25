@@ -42,16 +42,19 @@ Array [
       >
         <ul>
           <li
+            className="featured"
             id={33}
           >
             2-Slice
           </li>
           <li
+            className="featured"
             id={35}
           >
             Extra-Wide Slot
           </li>
           <li
+            className="featured"
             id={36}
           >
             Black
@@ -278,36 +281,43 @@ Array [
             Black
           </li>
           <li
+            className="featured"
             id={15}
           >
             Multi-Function
           </li>
           <li
+            className="featured"
             id={16}
           >
             Black
           </li>
           <li
+            className="featured"
             id={19}
           >
             Plastic Jar
           </li>
           <li
+            className="featured"
             id={21}
           >
             72 oz
           </li>
           <li
+            className="featured"
             id={24}
           >
             1200 Watt
           </li>
           <li
+            className="featured"
             id={30}
           >
             Built-In Timer
           </li>
           <li
+            className="featured"
             id={32}
           >
             Comes with extra to-go cups
@@ -492,21 +502,25 @@ Array [
             Black
           </li>
           <li
+            className="featured"
             id={15}
           >
             Multi-Function
           </li>
           <li
+            className="featured"
             id={16}
           >
             Black
           </li>
           <li
+            className="featured"
             id={19}
           >
             Plastic Jar
           </li>
           <li
+            className="featured"
             id={21}
           >
             72 oz
@@ -530,6 +544,7 @@ Array [
             Comes with extra to-go cups
           </li>
           <li
+            className="featured"
             id={27}
           >
             8 Blades
@@ -708,6 +723,7 @@ Array [
             Black
           </li>
           <li
+            className="featured"
             id={15}
           >
             Multi-Function
@@ -731,6 +747,7 @@ Array [
             72 oz
           </li>
           <li
+            className="featured"
             id={24}
           >
             1200 Watt
@@ -754,21 +771,25 @@ Array [
             8 Blades
           </li>
           <li
+            className="featured"
             id={18}
           >
             Glass Jar
           </li>
           <li
+            className="featured"
             id={23}
           >
             Dishwasher Safe
           </li>
           <li
+            className="featured"
             id={25}
           >
             24 oz
           </li>
           <li
+            className="featured"
             id={28}
           >
             6 Blades
@@ -923,21 +944,25 @@ Array [
             Black
           </li>
           <li
+            className="featured"
             id={15}
           >
             Multi-Function
           </li>
           <li
+            className="featured"
             id={16}
           >
             Black
           </li>
           <li
+            className="featured"
             id={19}
           >
             Plastic Jar
           </li>
           <li
+            className="featured"
             id={21}
           >
             72 oz
@@ -985,11 +1010,13 @@ Array [
             24 oz
           </li>
           <li
+            className="featured"
             id={28}
           >
             6 Blades
           </li>
           <li
+            className="featured"
             id={20}
           >
             1000 Watts
@@ -1216,21 +1243,25 @@ Array [
             1000 Watts
           </li>
           <li
+            className="featured"
             id={1}
           >
             8-inch
           </li>
           <li
+            className="featured"
             id={2}
           >
             Ergonomic Handle
           </li>
           <li
+            className="featured"
             id={3}
           >
             Carbon Stainless Steel
           </li>
           <li
+            className="featured"
             id={4}
           >
             Waved Pattern
@@ -1433,16 +1464,19 @@ Array [
             1000 Watts
           </li>
           <li
+            className="featured"
             id={1}
           >
             8-inch
           </li>
           <li
+            className="featured"
             id={2}
           >
             Ergonomic Handle
           </li>
           <li
+            className="featured"
             id={3}
           >
             Carbon Stainless Steel
@@ -1454,6 +1488,7 @@ Array [
             Waved Pattern
           </li>
           <li
+            className="featured"
             id={5}
           >
             Pakkawood Handle
@@ -1554,11 +1589,13 @@ Array [
       >
         <ul>
           <li
+            className="featured"
             id={33}
           >
             2-Slice
           </li>
           <li
+            className="featured"
             id={35}
           >
             Extra-Wide Slot
@@ -1678,16 +1715,19 @@ Array [
             Pakkawood Handle
           </li>
           <li
+            className="featured"
             id={37}
           >
             Removable Crumb Tray
           </li>
           <li
+            className="featured"
             id={39}
           >
             Stainless Steel
           </li>
           <li
+            className="featured"
             id={40}
           >
             Silver
@@ -1872,11 +1912,13 @@ Array [
             8-inch
           </li>
           <li
+            className="featured"
             id={2}
           >
             Ergonomic Handle
           </li>
           <li
+            className="featured"
             id={3}
           >
             Carbon Stainless Steel
@@ -1888,6 +1930,7 @@ Array [
             Waved Pattern
           </li>
           <li
+            className="featured"
             id={5}
           >
             Pakkawood Handle
@@ -1911,11 +1954,13 @@ Array [
             Silver
           </li>
           <li
+            className="featured"
             id={8}
           >
             5-inch
           </li>
           <li
+            className="featured"
             id={13}
           >
             Fiery Color
@@ -2088,11 +2133,13 @@ Array [
             8-inch
           </li>
           <li
+            className="featured"
             id={2}
           >
             Ergonomic Handle
           </li>
           <li
+            className="featured"
             id={3}
           >
             Carbon Stainless Steel
@@ -2104,6 +2151,7 @@ Array [
             Waved Pattern
           </li>
           <li
+            className="featured"
             id={5}
           >
             Pakkawood Handle
@@ -2139,16 +2187,19 @@ Array [
             Fiery Color
           </li>
           <li
+            className="featured"
             id={6}
           >
             7-inch
           </li>
           <li
+            className="featured"
             id={7}
           >
             Black
           </li>
           <li
+            className="featured"
             id={9}
           >
             Lifetime Warranty
@@ -2219,11 +2270,13 @@ Array [
             Black
           </li>
           <li
+            className="featured"
             id={15}
           >
             Multi-Function
           </li>
           <li
+            className="featured"
             id={16}
           >
             Black
@@ -2265,11 +2318,13 @@ Array [
             8 Blades
           </li>
           <li
+            className="featured"
             id={18}
           >
             Glass Jar
           </li>
           <li
+            className="featured"
             id={23}
           >
             Dishwasher Safe
@@ -2281,6 +2336,7 @@ Array [
             24 oz
           </li>
           <li
+            className="featured"
             id={28}
           >
             6 Blades
@@ -2370,11 +2426,13 @@ Array [
             Lifetime Warranty
           </li>
           <li
+            className="featured"
             id={17}
           >
             48 oz
           </li>
           <li
+            className="featured"
             id={22}
           >
             550 Watts

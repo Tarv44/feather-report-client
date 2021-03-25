@@ -2,7 +2,7 @@
 
 exports[`----- Login ----- renders the UI as expected 1`] = `
 <main
-  className="signup-login"
+  className="main"
 >
   <form
     autoComplete="off"
@@ -45,7 +45,7 @@ exports[`----- Login ----- renders the UI as expected 1`] = `
     <button
       type="submit"
     >
-      Login
+      Submit
     </button>
     <p>
       Don't have an account?

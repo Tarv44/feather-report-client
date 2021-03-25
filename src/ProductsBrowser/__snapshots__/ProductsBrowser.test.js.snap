@@ -2,7 +2,9 @@
 
 exports[`----- ProductsBrowser ----- renders the UI as expected 1`] = `
 <main>
-  <header>
+  <header
+    className="header"
+  >
     <h1 />
   </header>
   <main
@@ -27,23 +29,29 @@ exports[`----- ProductsBrowser ----- renders the UI as expected 1`] = `
     <section
       className="section"
     />
-    <div
+    <a
+      aria-current={null}
       className="float"
+      href="/compare"
+      onClick={[Function]}
     >
-      <p>
+      <p
+        className="click"
+      >
+        Click to
+      </p>
+      <p
+        className="compare"
+      >
+        Compare
+      </p>
+      <p
+        className="count"
+      >
         11
         /4
       </p>
-      <a
-        aria-current={null}
-        href="/compare"
-        onClick={[Function]}
-      >
-        <button>
-          Compare
-        </button>
-      </a>
-    </div>
+    </a>
   </main>
 </main>
 `;

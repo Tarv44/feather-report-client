@@ -2,11 +2,10 @@
 
 exports[`----- Signup ----- renders the UI as expected 1`] = `
 <main
-  className="signup-login"
+  className="signup-login main"
 >
   <form
     autoComplete="off"
-    className="signup-form"
     onSubmit={[Function]}
   >
     <h2>
@@ -37,6 +36,7 @@ exports[`----- Signup ----- renders the UI as expected 1`] = `
       </label>
       <input
         id="pathname"
+        maxLength={20}
         name="pathname"
         onChange={[Function]}
         type="text"
@@ -91,7 +91,7 @@ exports[`----- Signup ----- renders the UI as expected 1`] = `
       disabled={true}
       type="submit"
     >
-      Signup
+      Submit
     </button>
     <p>
       Already have an account?
