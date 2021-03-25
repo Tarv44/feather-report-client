@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- CatSelect ----- renders the UI as expected 1`] = `
+<div
+  className="category"
+>
+  <select
+    onChange={[Function]}
+  >
+    <option>
+      Select Category
+    </option>
+  </select>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    Create New Category
+  </button>
+</div>
+`;

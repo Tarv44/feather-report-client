@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- EditProduct ----- renders the UI as expected 1`] = `
+<form
+  className="form"
+>
+  <h2>
+    Add Product
+  </h2>
+  <fieldset>
+    <legend>
+      Details
+    </legend>
+    <label
+      htmlFor="productTitle-null"
+    >
+      Title
+    </label>
+    <input
+      id="productTitle-null"
+      name="title"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="productPrice-null"
+    >
+      Price
+    </label>
+    <input
+      id="productPrice-null"
+      name="price"
+      onChange={[Function]}
+      type="text"
+      value={0}
+    />
+    <label
+      htmlFor="productDescr-null"
+    >
+      Description
+    </label>
+    <textarea
+      id="productDescr-null"
+      name="description"
+      onChange={[Function]}
+      rows={5}
+      value=""
+    />
+    <label
+      htmlFor="productLink-null"
+    >
+      Buy Online Link
+    </label>
+    <input
+      id="productLink-null"
+      name="link"
+      onChange={[Function]}
+      value=""
+    />
+  </fieldset>
+  <fieldset>
+    <legend>
+      Category and Features
+    </legend>
+    <h3
+      className="label"
+    >
+      Category
+    </h3>
+    <div
+      className="category"
+    >
+      <select
+        onChange={[Function]}
+        value="Select Category"
+      >
+        <option>
+          Select Category
+        </option>
+        <option
+          id={1}
+        >
+          Knives
+        </option>
+        <option
+          id={2}
+        >
+          Blenders
+        </option>
+        <option
+          id={3}
+        >
+          Toasters
+        </option>
+      </select>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Create New Category
+      </button>
+    </div>
+    <h3
+      className="label"
+    >
+      Features
+    </h3>
+    <button
+      className="addFeat"
+      onClick={[Function]}
+    >
+      Add Another Feature
+    </button>
+  </fieldset>
+  <button
+    className="submit"
+    onClick={[Function]}
+  >
+    Add Product
+  </button>
+</form>
+`;

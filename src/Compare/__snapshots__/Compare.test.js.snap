@@ -1,0 +1,2398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- Compare ----- renders the UI as expected 1`] = `
+Array [
+  <header
+    className="header"
+  >
+    <h1>
+      Compare
+    </h1>
+    <a
+      aria-current={null}
+      className="return"
+      href="/path"
+      onClick={[Function]}
+    >
+      Return to Browse Products
+    </a>
+  </header>,
+  <main
+    className="main"
+  >
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          BLACK+DECKER 2-Slice Extra-Wide Slot Toaster
+        </h2>
+        <p>
+          $
+          21.95
+        </p>
+      </div>
+      <p>
+        Breakfast just got easier. The BLACK+DECKER 2-Slice Toaster is the perfect way to start your day, with six timed shade settings and special functions for bagels and frozen items. Plus, the extra-wide slots easily fit bagels, thick artisan breads, and more.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            className="notFeatured"
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            className="notFeatured"
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/BLACK-DECKER-2-Slice-Extra-Wide-T2569B/dp/B002CVTT4S/ref=sr_1_3?dchild=1&keywords=toaster&qid=1615073518&sr=8-3"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          Nutri Ninja Personal and Countertop Blender
+        </h2>
+        <p>
+          $
+          159.99
+        </p>
+      </div>
+      <p>
+        The Nutri Ninja | Ninja Blender Duo with Auto-iQ has 1200 watts of professional power and performance. The XL 72 oz. (64 oz. max liquid capacity) Pitcher features Total Crushing Technology to crush through ice and frozen ingredients in seconds to create creamy frozen drinks.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            className="notFeatured"
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/Ninja-Personal-Countertop-1200-Watt-BL642/dp/B00NGV4E1G/ref=sr_1_41?dchild=1&keywords=blender&qid=1615071550&sr=8-41"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          High Speed Blender
+        </h2>
+        <p>
+          $
+          99.99
+        </p>
+      </div>
+      <p>
+        This homgeek blender provides you with enough strength and precise textures, which can break more than 90% of the cell wall from the ingredients to extract nutrients and vitamins from food to the greatest extent. This is the best kitchen blender for you and an excellent gift choice.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            className="notFeatured"
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/1450-Watt-Professional-Countertop-Adjustable-Multifunctional/dp/B08DNM6RKV/ref=sr_1_19?dchild=1&keywords=blender&qid=1615067295&sr=8-19&th=1"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          Oster Blender Pro
+        </h2>
+        <p>
+          $
+          62.99
+        </p>
+      </div>
+      <p>
+        Blending just got better with the Oster Pro 1200 Plus. You can make everything fresh and delicious with this blender's versatility and performance.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            className="notFeatured"
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            className="notFeatured"
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/Oster-Blender-24-Ounce-Smoothie-Brushed/dp/B00XHXN54K/ref=sr_1_13?dchild=1&keywords=blender&qid=1615067295&sr=8-13"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          Ninja Professional Countertop Blender
+        </h2>
+        <p>
+          $
+          89.99
+        </p>
+      </div>
+      <p>
+        The Ninja professional blender 1000 features a sleek design and outstanding performance with 1000 watts of professional power. Ninja total crushing blades gives you perfect ice crushing, blending, pureeing, and controlled processing.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            className="notFeatured"
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506/ref=sr_1_4?dchild=1&keywords=blender&qid=1615067295&sr=8-4"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          Paudin Chef Knife
+        </h2>
+        <p>
+          $
+          28.99
+        </p>
+      </div>
+      <p>
+        This professional 8'' chef knife can easily handle your daily kitchen tasks of chopping, slicing, mincing and dicing of fruits, vegetables, and several meat varieties. It truly is the all-around cooking knife.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            className="notFeatured"
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            className="notFeatured"
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/Chef-Knife-Stainless-Ergonomic-Restaurant/dp/B07BK4YVB3/ref=sr_1_5?dchild=1&keywords=chef+knife&qid=1615059192&sr=8-5"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          imarku Chef Knife
+        </h2>
+        <p>
+          $
+          39.99
+        </p>
+      </div>
+      <p>
+        The Imarku 8-inch gyutou knife is designed for professionals who include chefs, culinary experts, food caterers as well as an ordinary person.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            className="notFeatured"
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/Imarku-Kitchen-Stainless-Ergonomic-Equipment/dp/B01DDBJF12/ref=sr_1_5?dchild=1&keywords=chef+knife&qid=1615059974&sr=8-5"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          Toasters 2 Slice Best Rated Prime
+        </h2>
+        <p>
+          $
+          31.47
+        </p>
+      </div>
+      <p>
+        2-slice Toaster accommodates your cravings in the morning, make your life healthier and easier.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            className="notFeatured"
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            className="notFeatured"
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/Toaster-Stainless-Removable-Settings-Function/dp/B08S7L48NJ/ref=sr_1_9?dchild=1&keywords=toaster&qid=1615136818&sr=8-9"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          TUO Kitchen Utility Knife
+        </h2>
+        <p>
+          $
+          22.95
+        </p>
+      </div>
+      <p>
+        The Fiery Phoenix Series small kitchen knives are masters of precision as they are suitable to peel an apple, supreme an orange, core a jalapeno, dice garlic or shallots, cut strawberries and some other small kitchen tasks.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            className="notFeatured"
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/TUO-Cutlery-Utility-Knife-Pakkawood/dp/B01GL50U70/ref=sxin_10?ascsubtag=amzn1.osa.7abf8191-1ee3-4a88-b387-2b3f7648e92d.ATVPDKIKX0DER.en_US&creativeASIN=B01GL50U70&cv_ct_cx=Kitchen+Knife&cv_ct_id=amzn1.osa.7abf8191-1ee3-4a88-b387-2b3f7648e92d.ATVPDKIKX0DER.en_US&cv_ct_pg=search&cv_ct_we=asin&cv_ct_wn=osp-single-source-earns-comm&dchild=1&keywords=Kitchen+Knife&linkCode=oas&pd_rd_i=B01GL50U70&pd_rd_r=a861f2e5-2dcb-42c5-b3ae-46b8ce89ca75&pd_rd_w=lzWa4&pd_rd_wg=UZHSK&pf_rd_p=35b32c02-1b41-4e49-9b89-0297af2446e1&pf_rd_r=RWC5Z4V132T2WMP17352&qid=1615060712&sr=1-4-64f3a41a-73ca-403a-923c-8152c45485fe&tag=scrippsonsite-20"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          Nakiri Japanese Vegetable Knife
+        </h2>
+        <p>
+          $
+          37.89
+        </p>
+      </div>
+      <p>
+        Combines the features of a chef's knife with the versatility of a vegetable cleaver. They differ from other knives in their shape, as Nakiris are characterized by their flat profiles and squared off tips. This profile makes these knives ideal for push cutting and chopping but awkward for rock cutting.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            className="notFeatured"
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            className="notFeatured"
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/KYOKU-Japanese-Vegetable-Knife-Sheath/dp/B07BK53GZN/ref=sr_1_18_sspa?dchild=1&keywords=Kitchen+Knife&qid=1615060712&sr=8-18-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFCV0ZVODMwNzJKUVQmZW5jcnlwdGVkSWQ9QTA2NjMzMTkyNzcxUjlSUU5ZMDVGJmVuY3J5cHRlZEFkSWQ9QTA3NjQwNDIxMFUwMThNSFJZUEEzJndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="product"
+    >
+      <div
+        className="content"
+      >
+        <h2>
+          BLACK+DECKER Countertop Blender
+        </h2>
+        <p>
+          $
+          22.44
+        </p>
+      </div>
+      <p>
+        The BLACK+DECKER 10-Speed Blender is a kitchen classic. With 10 speeds and a pulse control, operation is simple and efficient. The durable glass 6-cup jar is easy to pour from and holds several servings of your favorite soups, smoothies, frozen mixers, and more! Plus, cleanup is a breeze thanks to the dishwasher-safe removable parts.
+      </p>
+      <div
+        className="content"
+      >
+        <ul>
+          <li
+            className="notFeatured"
+            id={33}
+          >
+            2-Slice
+          </li>
+          <li
+            className="notFeatured"
+            id={35}
+          >
+            Extra-Wide Slot
+          </li>
+          <li
+            className="notFeatured"
+            id={36}
+          >
+            Black
+          </li>
+          <li
+            id={15}
+          >
+            Multi-Function
+          </li>
+          <li
+            id={16}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={19}
+          >
+            Plastic Jar
+          </li>
+          <li
+            className="notFeatured"
+            id={21}
+          >
+            72 oz
+          </li>
+          <li
+            className="notFeatured"
+            id={24}
+          >
+            1200 Watt
+          </li>
+          <li
+            className="notFeatured"
+            id={30}
+          >
+            Built-In Timer
+          </li>
+          <li
+            className="notFeatured"
+            id={32}
+          >
+            Comes with extra to-go cups
+          </li>
+          <li
+            className="notFeatured"
+            id={27}
+          >
+            8 Blades
+          </li>
+          <li
+            id={18}
+          >
+            Glass Jar
+          </li>
+          <li
+            id={23}
+          >
+            Dishwasher Safe
+          </li>
+          <li
+            className="notFeatured"
+            id={25}
+          >
+            24 oz
+          </li>
+          <li
+            id={28}
+          >
+            6 Blades
+          </li>
+          <li
+            className="notFeatured"
+            id={20}
+          >
+            1000 Watts
+          </li>
+          <li
+            className="notFeatured"
+            id={1}
+          >
+            8-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={2}
+          >
+            Ergonomic Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={3}
+          >
+            Carbon Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={4}
+          >
+            Waved Pattern
+          </li>
+          <li
+            className="notFeatured"
+            id={5}
+          >
+            Pakkawood Handle
+          </li>
+          <li
+            className="notFeatured"
+            id={37}
+          >
+            Removable Crumb Tray
+          </li>
+          <li
+            className="notFeatured"
+            id={39}
+          >
+            Stainless Steel
+          </li>
+          <li
+            className="notFeatured"
+            id={40}
+          >
+            Silver
+          </li>
+          <li
+            className="notFeatured"
+            id={8}
+          >
+            5-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={13}
+          >
+            Fiery Color
+          </li>
+          <li
+            className="notFeatured"
+            id={6}
+          >
+            7-inch
+          </li>
+          <li
+            className="notFeatured"
+            id={7}
+          >
+            Black
+          </li>
+          <li
+            className="notFeatured"
+            id={9}
+          >
+            Lifetime Warranty
+          </li>
+          <li
+            id={17}
+          >
+            48 oz
+          </li>
+          <li
+            id={22}
+          >
+            550 Watts
+          </li>
+        </ul>
+        <a
+          href="https://www.amazon.com/BLACK-DECKER-Countertop-10-Speed-BL2010BG/dp/B00OW16ZR0/ref=sr_1_5?dchild=1&keywords=blender&qid=1615067295&sr=8-5"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button
+            className="button"
+          >
+            Buy Online
+          </button>
+        </a>
+      </div>
+    </div>
+  </main>,
+]
+`;

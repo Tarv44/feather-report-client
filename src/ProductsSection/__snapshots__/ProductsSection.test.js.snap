@@ -1,0 +1,638 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- ProductsSection ----- renders the UI as expected 1`] = `
+<section
+  className="section"
+>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Sunbeam Wide Slot 4-Slice Toaster
+      </h2>
+      <p>
+        $
+        24.99
+      </p>
+    </div>
+    <p>
+      Get perfectly toasted food every time! The Sunbeam 4-Slice Toaster uses electronic toasting-technology for uniformly toasted bread, bagels, English muffins and more, just the way you like.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          4-Slice
+        </li>
+        <li>
+          Extra-Wide Slot
+        </li>
+        <li>
+          Black
+        </li>
+        <li>
+          Removable Crumb Tray
+        </li>
+        <li>
+          Anti-Jam Shut-Off
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Toaster 2 Slice
+      </h2>
+      <p>
+        $
+        28.88
+      </p>
+    </div>
+    <p>
+      The toasters 2 slice best rated prime quickly and consistently browns your bread perfectly for both sides, top to bottom. This toaster accommodates thick and thin bagels, muffins and bread. This toaster 2 slice allows you to toast different tastes you love. Automatic evenly fast toasting. Get ready your breakfast in few minutes with two slice toaster.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          2-Slice
+        </li>
+        <li>
+          Extra-Wide Slot
+        </li>
+        <li>
+          Removable Crumb Tray
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Little Cook Santoku Knife
+      </h2>
+      <p>
+        $
+        8.59
+      </p>
+    </div>
+    <p>
+      The Little Cook 7-inch santoku knife is Made for professionals who include chefs, culinary experts, food caterers as well as an ordinary person. It is a multipurpose chef's knife that is ideal for various tasks which include cutting, chopping, dicing and slicing vegetables, fruits, fish, meat and other products.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          Ergonomic Handle
+        </li>
+        <li>
+          Carbon Stainless Steel
+        </li>
+        <li>
+          7-inch
+        </li>
+        <li>
+          Black
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        BLACK+DECKER 2-Slice Extra-Wide Slot Toaster
+      </h2>
+      <p>
+        $
+        21.95
+      </p>
+    </div>
+    <p>
+      Breakfast just got easier. The BLACK+DECKER 2-Slice Toaster is the perfect way to start your day, with six timed shade settings and special functions for bagels and frozen items. Plus, the extra-wide slots easily fit bagels, thick artisan breads, and more.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          2-Slice
+        </li>
+        <li>
+          Extra-Wide Slot
+        </li>
+        <li>
+          Black
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Nutri Ninja Personal and Countertop Blender
+      </h2>
+      <p>
+        $
+        159.99
+      </p>
+    </div>
+    <p>
+      The Nutri Ninja | Ninja Blender Duo with Auto-iQ has 1200 watts of professional power and performance. The XL 72 oz. (64 oz. max liquid capacity) Pitcher features Total Crushing Technology to crush through ice and frozen ingredients in seconds to create creamy frozen drinks.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          Multi-Function
+        </li>
+        <li>
+          Black
+        </li>
+        <li>
+          Plastic Jar
+        </li>
+        <li>
+          72 oz
+        </li>
+        <li>
+          1200 Watt
+        </li>
+        <li>
+          Built-In Timer
+        </li>
+        <li>
+          Comes with extra to-go cups
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        High Speed Blender
+      </h2>
+      <p>
+        $
+        99.99
+      </p>
+    </div>
+    <p>
+      This homgeek blender provides you with enough strength and precise textures, which can break more than 90% of the cell wall from the ingredients to extract nutrients and vitamins from food to the greatest extent. This is the best kitchen blender for you and an excellent gift choice.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          Multi-Function
+        </li>
+        <li>
+          Black
+        </li>
+        <li>
+          Plastic Jar
+        </li>
+        <li>
+          72 oz
+        </li>
+        <li>
+          8 Blades
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Oster Blender Pro
+      </h2>
+      <p>
+        $
+        62.99
+      </p>
+    </div>
+    <p>
+      Blending just got better with the Oster Pro 1200 Plus. You can make everything fresh and delicious with this blender's versatility and performance.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          Multi-Function
+        </li>
+        <li>
+          Glass Jar
+        </li>
+        <li>
+          Dishwasher Safe
+        </li>
+        <li>
+          1200 Watt
+        </li>
+        <li>
+          24 oz
+        </li>
+        <li>
+          6 Blades
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Ninja Professional Countertop Blender
+      </h2>
+      <p>
+        $
+        89.99
+      </p>
+    </div>
+    <p>
+      The Ninja professional blender 1000 features a sleek design and outstanding performance with 1000 watts of professional power. Ninja total crushing blades gives you perfect ice crushing, blending, pureeing, and controlled processing.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          Multi-Function
+        </li>
+        <li>
+          Black
+        </li>
+        <li>
+          Plastic Jar
+        </li>
+        <li>
+          1000 Watts
+        </li>
+        <li>
+          72 oz
+        </li>
+        <li>
+          6 Blades
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Paudin Chef Knife
+      </h2>
+      <p>
+        $
+        28.99
+      </p>
+    </div>
+    <p>
+      This professional 8'' chef knife can easily handle your daily kitchen tasks of chopping, slicing, mincing and dicing of fruits, vegetables, and several meat varieties. It truly is the all-around cooking knife.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          8-inch
+        </li>
+        <li>
+          Ergonomic Handle
+        </li>
+        <li>
+          Carbon Stainless Steel
+        </li>
+        <li>
+          Waved Pattern
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        imarku Chef Knife
+      </h2>
+      <p>
+        $
+        39.99
+      </p>
+    </div>
+    <p>
+      The Imarku 8-inch gyutou knife is designed for professionals who include chefs, culinary experts, food caterers as well as an ordinary person.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          8-inch
+        </li>
+        <li>
+          Ergonomic Handle
+        </li>
+        <li>
+          Carbon Stainless Steel
+        </li>
+        <li>
+          Pakkawood Handle
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Toasters 2 Slice Best Rated Prime
+      </h2>
+      <p>
+        $
+        31.47
+      </p>
+    </div>
+    <p>
+      2-slice Toaster accommodates your cravings in the morning, make your life healthier and easier.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          2-Slice
+        </li>
+        <li>
+          Extra-Wide Slot
+        </li>
+        <li>
+          Removable Crumb Tray
+        </li>
+        <li>
+          Stainless Steel
+        </li>
+        <li>
+          Silver
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        TUO Kitchen Utility Knife
+      </h2>
+      <p>
+        $
+        22.95
+      </p>
+    </div>
+    <p>
+      The Fiery Phoenix Series small kitchen knives are masters of precision as they are suitable to peel an apple, supreme an orange, core a jalapeno, dice garlic or shallots, cut strawberries and some other small kitchen tasks.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          Ergonomic Handle
+        </li>
+        <li>
+          Carbon Stainless Steel
+        </li>
+        <li>
+          Pakkawood Handle
+        </li>
+        <li>
+          5-inch
+        </li>
+        <li>
+          Fiery Color
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        Nakiri Japanese Vegetable Knife
+      </h2>
+      <p>
+        $
+        37.89
+      </p>
+    </div>
+    <p>
+      Combines the features of a chef's knife with the versatility of a vegetable cleaver. They differ from other knives in their shape, as Nakiris are characterized by their flat profiles and squared off tips. This profile makes these knives ideal for push cutting and chopping but awkward for rock cutting.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          Ergonomic Handle
+        </li>
+        <li>
+          Carbon Stainless Steel
+        </li>
+        <li>
+          Pakkawood Handle
+        </li>
+        <li>
+          7-inch
+        </li>
+        <li>
+          Black
+        </li>
+        <li>
+          Lifetime Warranty
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+  <div
+    className="product"
+  >
+    <div
+      className="content"
+    >
+      <h2>
+        BLACK+DECKER Countertop Blender
+      </h2>
+      <p>
+        $
+        22.44
+      </p>
+    </div>
+    <p>
+      The BLACK+DECKER 10-Speed Blender is a kitchen classic. With 10 speeds and a pulse control, operation is simple and efficient. The durable glass 6-cup jar is easy to pour from and holds several servings of your favorite soups, smoothies, frozen mixers, and more! Plus, cleanup is a breeze thanks to the dishwasher-safe removable parts.
+    </p>
+    <div
+      className="content"
+    >
+      <ul>
+        <li>
+          Multi-Function
+        </li>
+        <li>
+          Black
+        </li>
+        <li>
+          48 oz
+        </li>
+        <li>
+          Glass Jar
+        </li>
+        <li>
+          550 Watts
+        </li>
+        <li>
+          Dishwasher Safe
+        </li>
+        <li>
+          6 Blades
+        </li>
+      </ul>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Edit Product
+      </button>
+    </div>
+  </div>
+</section>
+`;

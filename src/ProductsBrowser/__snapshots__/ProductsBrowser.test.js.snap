@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- ProductsBrowser ----- renders the UI as expected 1`] = `
+<main>
+  <header>
+    <h1 />
+  </header>
+  <main
+    className="browser_main"
+  >
+    <section
+      className="section"
+    >
+      <h2>
+        Categories
+      </h2>
+      <div
+        className="buttons"
+      >
+        <button
+          onClick={[Function]}
+        >
+          All Categories
+        </button>
+      </div>
+    </section>
+    <section
+      className="section"
+    />
+    <div
+      className="float"
+    >
+      <p>
+        11
+        /4
+      </p>
+      <a
+        aria-current={null}
+        href="/compare"
+        onClick={[Function]}
+      >
+        <button>
+          Compare
+        </button>
+      </a>
+    </div>
+  </main>
+</main>
+`;

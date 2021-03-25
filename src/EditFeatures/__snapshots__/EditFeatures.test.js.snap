@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- EditFeatures ----- renders the UI as expected 1`] = `
+<fieldset>
+  <legend>
+    Category and Features
+  </legend>
+  <h3
+    className="label"
+  >
+    Category
+  </h3>
+  <div
+    className="category"
+  >
+    <select
+      onChange={[Function]}
+      value="Knives"
+    >
+      <option>
+        Select Category
+      </option>
+      <option
+        id={1}
+      >
+        Knives
+      </option>
+      <option
+        id={2}
+      >
+        Blenders
+      </option>
+      <option
+        id={3}
+      >
+        Toasters
+      </option>
+    </select>
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Create New Category
+    </button>
+  </div>
+  <h3
+    className="label"
+  >
+    Features
+  </h3>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="8-inch"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Ergonomic Handle"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Carbon Stainless Steel"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Waved Pattern"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Pakkawood Handle"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="7-inch"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Black"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="5-inch"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Lifetime Warranty"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Santoprene Handle"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Titanium Plated"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Comes with Sharpener"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <div
+    className="feature"
+  >
+    <select
+      onChange={[Function]}
+      value="Fiery Color"
+    >
+      <option>
+        Select Feature
+      </option>
+    </select>
+    <button
+      className="create"
+      onClick={[Function]}
+    >
+      Create New Feature
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Remove Feature
+    </button>
+  </div>
+  <button
+    className="addFeat"
+    onClick={[Function]}
+  >
+    Add Another Feature
+  </button>
+</fieldset>
+`;

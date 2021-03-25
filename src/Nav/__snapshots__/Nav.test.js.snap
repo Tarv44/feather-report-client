@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- Nav ----- renders the UI as expected 1`] = `
+<nav>
+  <a
+    aria-current="page"
+    className="logo active"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <img
+      alt="logo"
+      src="F.png"
+    />
+  </a>
+  <div
+    className="links"
+  >
+    <a
+      aria-current={null}
+      href="/co/undefined/admin"
+      onClick={[Function]}
+    >
+      Account
+    </a>
+  </div>
+</nav>
+`;

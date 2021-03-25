@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- Admin ----- renders the UI as expected 1`] = `
+<main>
+  <h2>
+    Log in to use Admin page.
+  </h2>
+  <a
+    aria-current={null}
+    href="/login"
+    onClick={[Function]}
+  >
+    Log In
+  </a>
+</main>
+`;

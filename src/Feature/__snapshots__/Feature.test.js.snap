@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- Feature ----- renders the UI as expected 1`] = `
+<div
+  className="feature"
+>
+  <select
+    onChange={[Function]}
+    value="Select Feature"
+  >
+    <option>
+      Select Feature
+    </option>
+    <option>
+      8-inch
+    </option>
+    <option>
+      Ergonomic Handle
+    </option>
+    <option>
+      Carbon Stainless Steel
+    </option>
+    <option>
+      Waved Pattern
+    </option>
+    <option>
+      Pakkawood Handle
+    </option>
+    <option>
+      7-inch
+    </option>
+    <option>
+      Black
+    </option>
+    <option>
+      5-inch
+    </option>
+    <option>
+      Lifetime Warranty
+    </option>
+    <option>
+      Santoprene Handle
+    </option>
+    <option>
+      Titanium Plated
+    </option>
+    <option>
+      Comes with Sharpener
+    </option>
+    <option>
+      Fiery Color
+    </option>
+  </select>
+  <button
+    className="create"
+    onClick={[Function]}
+  >
+    Create New Feature
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Remove Feature
+  </button>
+</div>
+`;

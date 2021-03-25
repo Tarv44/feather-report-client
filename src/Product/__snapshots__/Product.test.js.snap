@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- Product ----- renders the UI as expected 1`] = `
+<div
+  className="product"
+>
+  <div
+    className="content"
+  >
+    <h2>
+      Sunbeam Wide Slot 4-Slice Toaster
+    </h2>
+    <p>
+      $
+      24.99
+    </p>
+  </div>
+  <p>
+    Get perfectly toasted food every time! The Sunbeam 4-Slice Toaster uses electronic toasting-technology for uniformly toasted bread, bagels, English muffins and more, just the way you like.
+  </p>
+  <div
+    className="content"
+  >
+    <ul>
+      <li>
+        4-Slice
+      </li>
+      <li>
+        Extra-Wide Slot
+      </li>
+      <li>
+        Black
+      </li>
+      <li>
+        Removable Crumb Tray
+      </li>
+      <li>
+        Anti-Jam Shut-Off
+      </li>
+    </ul>
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Edit Product
+    </button>
+  </div>
+</div>
+`;

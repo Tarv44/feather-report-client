@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`----- CatSelector ----- renders the UI as expected 1`] = `
+<section
+  className="section"
+>
+  <h2>
+    Categories
+  </h2>
+  <div
+    className="buttons"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Knives
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Blenders
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Toasters
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      All Categories
+    </button>
+  </div>
+</section>
+`;
